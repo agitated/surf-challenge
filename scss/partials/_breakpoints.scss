@@ -38,7 +38,7 @@ $break-xlarge: 1180px;
     @include rem(width,1200px);
   }
 
-  .header,.currentStandings
+  .header,.currentStandings,.mainContent
   {
     @include center-block();
     @include rem(width,970px);
@@ -61,7 +61,7 @@ $break-xlarge: 1180px;
     width:100%;
   }
 
-  .header,.currentStandings
+  .header,.currentStandings,.mainContent
   {
     @include center-block();
     @include rem(width,970px);
@@ -86,13 +86,20 @@ $break-xlarge: 1180px;
   {
     display:none;
   }
-
-
-
   .leadRider
   {
     top:75%;
     left:6%;
+  }
+  .content
+  {
+    width:100%;
+  }
+
+  .promotionLarge
+  {
+    @include rem(width,640px);
+    @include center-block();
   }
 }
 
@@ -155,6 +162,35 @@ $break-xlarge: 1180px;
     @include rem(padding-top,10px);
     h2{
       margin-top: 0;
+    }
+  }
+
+  .content
+  {
+    @include rem(padding,10px);
+    width:100%;
+  }
+
+  .promotionLarge
+  {
+    width: 100%;
+    background:url("../images/promo-image-divers.png")90% -20px no-repeat;
+    .promoTitle
+    {
+      width:100%;
+      margin-bottom: 200px;
+    }
+    .introduction
+    {
+      width:100%;
+    }
+    .callout
+    {
+      width:100%;
+    }
+    .button
+    {
+      @include center-block()
     }
   }
 }

@@ -1,6 +1,6 @@
 .leaderboard{
   @extend %clearfix;
-  @include rem(width,320px);
+  @include rem(width,300px);
   @include rem(padding,20px 0);
   @include box-sizing(border-box);
   float:right;
@@ -43,7 +43,7 @@
   }
   .name
   {
-    @include rem(font-size, 16px);
+    @include rem(font-size, 15px);
     display:inline;
     position:relative;
     top:-7px;

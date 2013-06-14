@@ -19,3 +19,27 @@
   z-index:4;
   width:100%;
 }
+.mainContent
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  @include rem(padding,20px 0);
+  clear:both;
+}
+
+.content
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  @include rem(width,640px);
+  display:inline-block;
+  float:left;
+}
+.sidebar
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  @include rem(width,300px);
+  display:inline-block;
+  float:right;
+}

@@ -7,6 +7,9 @@ a{
 }
 
 p{
+  color:$color-text-default;
+  font-family: $font-body;
+  font-weight: 300;
   a{
     border-bottom: 1px $color-text-link-border solid;
 

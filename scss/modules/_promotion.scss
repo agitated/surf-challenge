@@ -1,0 +1,36 @@
+.promotionLarge
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  @include rem(padding-bottom, 40px);
+  border-bottom: $border-divider;
+  width:100%;
+  background:url("../images/promo-image-divers.png") center 0 no-repeat;
+  .promoTitle
+  {
+    @include rem(margin-bottom, 20px);
+  }
+  .introduction
+  {
+    @include rem(width, 310px);
+    @include rem(margin-bottom, 20px);
+  }
+  .callout
+  {
+    @include rem(width, 310px);
+    @include rem(font-size, 22px);
+    @include rem(line-height , 30px);
+    @include rem(margin-bottom, 30px);
+    font-weight:700;
+    color:$color-text-promo-callout;
+
+  }
+  .button
+  {
+    @include button();
+    @include rem(width, 310px);
+    background: $color-promo-button;
+
+  }
+
+}

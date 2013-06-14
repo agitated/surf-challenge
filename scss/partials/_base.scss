@@ -28,16 +28,19 @@ $color-background:#0a364c;
 $color-text-default:#efe6d6;
 $color-text-link:#fff;
 $color-text-hover:#1abc9c;
+$color-text-button:#fff;
 $color-text-link-border:$color-text-hover;
 $color-text-header:#efe6d6;
 $color-text-positionNum:#efe6d6;
+$color-text-promo-callout:#f9adb9;
 
 
 //objects
 $color-divider:#efe6d6;
+$color-promo-button:#cd61ad;
 
 //* !----  measurement ---- */
-
+$border-radius-button:6px;
 
 //styling
 $border-divider:2px $color-divider solid;

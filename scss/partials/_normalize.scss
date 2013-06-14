@@ -19,7 +19,7 @@ $h6-font-size: 0.67 * $base-font-size !default;
 
 
 // The default font family.
-$base-font-family: sans-serif !default;
+$base-font-family: $font-body !default;
 
 // The amount lists and blockquotes are indented.
 $indent-amount: 40px !default;

@@ -14,6 +14,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/scss\/modules\/_promotion.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_promotion.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_promotion.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/public\/images\/mobile-button.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -67,6 +79,18 @@
       "initialSize" : 2524,
       "fileType" : 8192
     },
+    "\/scss\/modules\/_leader.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/scss\/partials\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -103,17 +127,25 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/modules\/_leader.scss" : {
+    "\/public\/images\/promo-image-divers.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "initialSize" : 504930,
+      "fileType" : 8192
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/public\/images\/icon_leader.png" : {
       "ignoreWasSetByUser" : 0,
@@ -125,15 +157,6 @@
       "outputAbbreviatedPath" : "\/public\/images\/icon_leader.png",
       "initialSize" : 2068,
       "fileType" : 8192
-    },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
     },
     "\/scss\/partials\/_sections.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -338,18 +361,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/partials\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/archive\/bg_test.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -361,6 +372,17 @@
       "initialSize" : 39035,
       "fileType" : 4096
     },
+    "\/public\/images\/title-promo-header.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
+      "initialSize" : 31666,
+      "fileType" : 8192
+    },
     "\/archive\/imgtest.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -369,6 +391,18 @@
       "inputAbbreviatedPath" : "\/archive\/imgtest.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/scss\/partials\/_normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/archive\/promo_v2.png" : {
       "ignoreWasSetByUser" : 0,
