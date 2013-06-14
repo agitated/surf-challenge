@@ -648,18 +648,18 @@ p a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   position: relative;
   z-index: 4;
   width: 100%;
 }
 
-/* line 23, ../../scss/partials/_sections.scss */
+/* line 24, ../../scss/partials/_sections.scss */
 .mainContent {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 20px 0;
-  padding: 1.25rem 0;
   clear: both;
 }
 
@@ -1155,31 +1155,38 @@ p a {
   }
 
   /* line 169, ../../scss/partials/_breakpoints.scss */
+  .mainContent {
+    padding: 0;
+  }
+
+  /* line 174, ../../scss/partials/_breakpoints.scss */
   .content {
     padding: 10px;
     padding: 0.625rem;
     width: 100%;
   }
 
-  /* line 175, ../../scss/partials/_breakpoints.scss */
+  /* line 180, ../../scss/partials/_breakpoints.scss */
   .promotionLarge {
+    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     width: 100%;
     background: url("../images/promo-image-divers.png") 90% -20px no-repeat;
   }
-  /* line 179, ../../scss/partials/_breakpoints.scss */
+  /* line 185, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .promoTitle {
     width: 100%;
     margin-bottom: 200px;
   }
-  /* line 184, ../../scss/partials/_breakpoints.scss */
+  /* line 190, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .introduction {
     width: 100%;
   }
-  /* line 188, ../../scss/partials/_breakpoints.scss */
+  /* line 194, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .callout {
     width: 100%;
   }
-  /* line 192, ../../scss/partials/_breakpoints.scss */
+  /* line 198, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .button {
     display: block;
     margin-left: auto;
@@ -1188,27 +1195,28 @@ p a {
 }
 /*   !----  $break-xsml ----   */
 @media only screen and (max-width: 660px) {
-  /* line 203, ../../scss/partials/_breakpoints.scss */
+  /* line 209, ../../scss/partials/_breakpoints.scss */
   .leaderboard {
     padding-top: 20px;
     padding-top: 1.25rem;
     float: none;
     width: 100%;
     border-top: 2px #efe6d6 solid;
+    border-bottom: 2px #efe6d6 solid;
   }
-  /* line 208, ../../scss/partials/_breakpoints.scss */
+  /* line 215, ../../scss/partials/_breakpoints.scss */
   .leaderboard h2 {
     font-size: 26px;
     font-size: 1.625rem;
   }
 
-  /* line 213, ../../scss/partials/_breakpoints.scss */
+  /* line 220, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -33%;
     left: -26%;
   }
 
-  /* line 219, ../../scss/partials/_breakpoints.scss */
+  /* line 226, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 300px;
     height: 18.75rem;
@@ -1217,22 +1225,32 @@ p a {
     display: block;
   }
 
-  /* line 228, ../../scss/partials/_breakpoints.scss */
+  /* line 233, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     top: 50px;
     top: 3.125rem;
     float: right;
   }
+
+  /* line 238, ../../scss/partials/_breakpoints.scss */
+  .promotionLarge {
+    background: url("../images/promo-image-divers.png") 90% -40px no-repeat;
+  }
+  /* line 241, ../../scss/partials/_breakpoints.scss */
+  .promotionLarge .promoTitle {
+    margin-bottom: 240px;
+    margin-bottom: 15rem;
+  }
 }
 /*   !----  $break-xxsmall ----   */
 @media only screen and (max-width: 480px) {
-  /* line 240, ../../scss/partials/_breakpoints.scss */
+  /* line 252, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -38%;
     left: -25%;
   }
 
-  /* line 246, ../../scss/partials/_breakpoints.scss */
+  /* line 258, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 280px;
     height: 17.5rem;
@@ -1241,7 +1259,7 @@ p a {
     display: block;
   }
 
-  /* line 254, ../../scss/partials/_breakpoints.scss */
+  /* line 266, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     display: block;
     margin-left: auto;
@@ -1253,7 +1271,7 @@ p a {
     height: 140px;
     background: url("../images/icon_leader.png") 0 78px no-repeat;
   }
-  /* line 263, ../../scss/partials/_breakpoints.scss */
+  /* line 275, ../../scss/partials/_breakpoints.scss */
   .leadRider .position {
     width: 68px;
     width: 4.25rem;
@@ -1266,14 +1284,14 @@ p a {
     text-align: center;
     background: url("../images/icon_large_mobile_circle.png") top left no-repeat;
   }
-  /* line 272, ../../scss/partials/_breakpoints.scss */
+  /* line 284, ../../scss/partials/_breakpoints.scss */
   .leadRider .name {
     top: 90px;
     top: 5.625rem;
     left: 25px;
     left: 1.5625rem;
   }
-  /* line 276, ../../scss/partials/_breakpoints.scss */
+  /* line 288, ../../scss/partials/_breakpoints.scss */
   .leadRider .votes {
     left: 25px;
     left: 1.5625rem;

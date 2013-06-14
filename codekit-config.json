@@ -79,18 +79,6 @@
       "initialSize" : 2524,
       "fileType" : 8192
     },
-    "\/scss\/modules\/_leader.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/scss\/partials\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -137,6 +125,18 @@
       "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
       "initialSize" : 504930,
       "fileType" : 8192
+    },
+    "\/scss\/modules\/_leader.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
@@ -193,17 +193,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/logo.png",
-      "initialSize" : 9859,
-      "fileType" : 8192
-    },
     "\/public\/images\/bg-hero-test4.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -214,6 +203,17 @@
       "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test4.jpg",
       "initialSize" : 151935,
       "fileType" : 4096
+    },
+    "\/public\/images\/logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/logo.png",
+      "initialSize" : 9859,
+      "fileType" : 8192
     },
     "\/public\/images\/bg-test.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -361,16 +361,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/archive\/bg_test.jpg" : {
+    "\/scss\/partials\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "initialSize" : 39035,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/public\/images\/title-promo-header.png" : {
       "ignoreWasSetByUser" : 0,
@@ -392,17 +393,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/scss\/partials\/_normalize.scss" : {
+    "\/archive\/bg_test.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "initialSize" : 39035,
+      "fileType" : 4096
     },
     "\/archive\/promo_v2.png" : {
       "ignoreWasSetByUser" : 0,

@@ -165,6 +165,11 @@ $break-xlarge: 1180px;
     }
   }
 
+  .mainContent
+  {
+    padding:0;
+  }
+
   .content
   {
     @include rem(padding,10px);
@@ -173,6 +178,7 @@ $break-xlarge: 1180px;
 
   .promotionLarge
   {
+    @include rem(padding-bottom,30px);
     width: 100%;
     background:url("../images/promo-image-divers.png")90% -20px no-repeat;
     .promoTitle
@@ -205,6 +211,7 @@ $break-xlarge: 1180px;
     float:none;
     width:100%;
     border-top:$border-divider;
+    border-bottom: $border-divider;
     h2{
       @include rem(font-size,26px)
     }
@@ -222,14 +229,19 @@ $break-xlarge: 1180px;
     float:none;
     display:block;
   }
-
-
   .leadRider
   {
     @include rem(top,50px);
     float:right;
   }
-
+  .promotionLarge
+  {
+    background:url("../images/promo-image-divers.png")90% -40px no-repeat;
+    .promoTitle
+    {
+      @include rem(margin-bottom, 240px)
+    }
+  }
 }
 
 
