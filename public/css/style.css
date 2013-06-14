@@ -666,30 +666,31 @@ p a {
 .navigation li {
   display: table-cell;
   text-align: center;
+  vertical-align: middle;
   white-space: nowrap;
 }
-/* line 20, ../../scss/modules/_navigation.scss */
+/* line 21, ../../scss/modules/_navigation.scss */
 .navigation li a {
   padding: 20px 0;
   padding: 1.25rem 0;
   display: inline-block;
   text-decoration: none;
 }
-/* line 27, ../../scss/modules/_navigation.scss */
+/* line 28, ../../scss/modules/_navigation.scss */
 .navigation li:first-child {
   text-align: left;
 }
-/* line 30, ../../scss/modules/_navigation.scss */
+/* line 31, ../../scss/modules/_navigation.scss */
 .navigation li:last-child {
   text-align: right;
 }
 
-/* line 36, ../../scss/modules/_navigation.scss */
+/* line 37, ../../scss/modules/_navigation.scss */
 .smallNav {
   display: blocks;
   width: 100%;
 }
-/* line 42, ../../scss/modules/_navigation.scss */
+/* line 43, ../../scss/modules/_navigation.scss */
 .smallNav .smallNavButton {
   height: 50px;
   height: 3.125rem;
@@ -701,7 +702,7 @@ p a {
   float: left;
   background: url("../images/mobile-button.png") top center no-repeat;
 }
-/* line 52, ../../scss/modules/_navigation.scss */
+/* line 53, ../../scss/modules/_navigation.scss */
 .smallNav .logo {
   padding-top: 1%;
   text-align: center;
@@ -709,7 +710,7 @@ p a {
   float: right;
 }
 
-/* line 61, ../../scss/modules/_navigation.scss */
+/* line 62, ../../scss/modules/_navigation.scss */
 .shadow {
   background: url("../images/header-shadow.png") top center repeat-x;
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.5)));
