@@ -1,0 +1,21 @@
+#container
+{
+  position:relative;
+  background:url("../images/bg-test.jpg") $color-background 0 20% repeat;
+}
+.header
+{
+  @include rem(padding,10px);
+  @include box-sizing(border-box);
+  position:relative;
+  top:0;
+  z-index:3;
+}
+.currentStandings
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  position:relative;
+  z-index:4;
+  width:100%;
+}

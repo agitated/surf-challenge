@@ -1,0 +1,53 @@
+//* !------ variables ------ */
+
+
+//* !----  fonts ---- */
+$base-size:16px;
+
+@font-face {
+    font-family: 'gothic821_cn_btregular';
+    src: url('../fonts/gothic821-cn-bt-webfont.eot');
+    src: url('../fonts/gothic821-cn-bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gothic821-cn-bt-webfont.woff') format('woff'),
+         url('../fonts/gothic821-cn-bt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-body:'Open Sans', sans-serif;
+$font-header:'gothic821_cn_btregular';
+$font-header-link:'Open Sans Condensed', sans-serif;
+
+
+//* !----  colours ---- */
+
+//base
+$color-background:#0a364c;
+
+//text
+$color-text-default:#efe6d6;
+$color-text-link:#fff;
+$color-text-hover:#1abc9c;
+$color-text-link-border:$color-text-hover;
+$color-text-header:#efe6d6;
+$color-text-positionNum:#efe6d6;
+
+
+//objects
+$color-divider:#efe6d6;
+
+//* !----  measurement ---- */
+
+
+//styling
+$border-divider:2px $color-divider solid;
+
+//Imports
+@import "partials/mixins";
+@import "partials/normalize";
+
+
+//vendor
+@import "compass/css3";
+@import "compass/css3/transition";
+

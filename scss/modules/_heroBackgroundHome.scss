@@ -1,0 +1,14 @@
+.heroImageContainer{
+  width:100%;
+  display:block;
+  overflow:hidden;
+  position:absolute;
+  height:800px;
+}
+
+.heroImage{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+}

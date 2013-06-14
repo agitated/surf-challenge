@@ -1,0 +1,16 @@
+// base
+@import "partials/base";
+@import "partials/globals";
+@import "partials/sections";
+
+//modules
+@import "modules/navigation";
+@import "modules/heroBackgroundHome";
+@import "modules/banners";
+@import "modules/leaderboard";
+@import "modules/leader";
+
+
+//breakpoints
+@import "partials/breakpoints";
+

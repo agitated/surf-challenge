@@ -1,0 +1,67 @@
+$posWidth:60px;
+
+.leader{
+float:left;
+@extend %clearfix;
+@include box-sizing(border-box);
+}
+
+.leadRider
+{
+  @extend %clearfix;
+  @include rem(height,63px);
+  @include rem(width,380px);
+  background:url("../images/icon_leader.png") 70px -4px no-repeat;
+  position:absolute;
+  top:40%;
+  left:28%;
+  display:inline-block;
+  .position
+  {
+    @include rem(width,$posWidth);
+    @include rem(height,63px);
+    @include rem(padding-top,18px);
+    @include rem(font-size,36px);
+    text-align: center;
+    display:inline-block;
+    color:$color-text-positionNum;
+    background:url("../images/icon_large_circle.png") top left no-repeat;
+    position:relative;
+    margin:0;
+    padding-bottom: 0;
+  }
+  .name
+  {
+    @include rem(font-size, 45px);
+    @include rem(top,9px);
+    font:{
+      family:$font-header;
+      weight:normal;
+    }
+    color:$color-text-header;
+    text-transform: uppercase;
+    display:inline;
+    position:absolute;
+    left:$posWidth+35px;
+    margin:0;
+    padding:0;
+
+  }
+  .votes
+  {
+    @include rem(font-size, 24px);
+    @include rem(top,38px);
+    font:{
+      family:$font-header;
+      weight:normal;
+    }
+    color:$color-text-header;
+    text-transform: uppercase;
+    display:inline-block;
+    position:absolute;
+    left:$posWidth+35px;
+    margin:0;
+    padding:0;
+    color:$color-text-default;
+  }
+}

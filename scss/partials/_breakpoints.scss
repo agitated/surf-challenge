@@ -1,0 +1,250 @@
+//breakpoints
+$break-xsmall: 480px;
+$break-small: 660px;
+$break-med: 740px;
+$break-large: 970px;
+$break-xlarge: 1180px;
+
+//breakpoints
+@mixin breakpoint($media) {
+   @if $media == xxsml {
+    @media only screen and (max-width: $break-xsmall) { @content; }
+  }
+ @else if  $media == xsml {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if  $media == sml {
+    @media only screen and (max-width: $break-med) { @content; }
+  }
+  @else if $media == med {
+    @media only screen and (min-width: $break-med + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == lrg {
+    @media only screen and (min-width: $break-large) and (max-width: $break-xlarge - 1) { @content; }
+  }
+  @else if $media == xlrg{
+    @media only screen and (min-width: $break-xlarge) { @content; }
+  } @else {
+        @media only screen and (max-width: $media) { @content; }
+  }
+
+}
+
+/*   !----  $break-xlrg ----   */
+@include breakpoint(xlrg)
+{
+  #container{
+    @include center-block();
+    @include rem(width,1200px);
+  }
+
+  .header,.currentStandings
+  {
+    @include center-block();
+    @include rem(width,970px);
+  }
+
+  .smallNav
+  {
+    display:none;
+  }
+
+}
+
+/*   !----  $break-lrg ----   */
+@include breakpoint(lrg)
+{
+  #container{
+    @include center-block();
+    width:100%;
+  }
+
+  .header,.currentStandings
+  {
+    @include center-block();
+    @include rem(width,970px);
+  }
+
+  .smallNav
+  {
+    display:none;
+  }
+
+}
+
+/*   !----  $break-med ----   */
+@include breakpoint(med)
+{
+  .smallNav
+  {
+    display:none;
+  }
+
+
+
+  .leadRider
+  {
+    top:75%;
+    left:6%;
+  }
+}
+
+/*   !----  $break-sml ----   */
+@include breakpoint(sml)
+{
+
+
+  .heroBanner,.largeNav
+  {
+    display:none;
+  }
+
+  #container
+  {
+    background:url("../images/bg-test.jpg") $color-background 0 20% repeat;
+  }
+
+  .heroImage{
+    top:-27%;
+    left:-13%;
+  }
+
+  .currentStandings
+  {
+    @include rem(padding,10px);
+  }
+
+
+  .leadRider
+  {
+    @include center-block();
+    @include rem(top,250px);
+    @include rem(width,310px);
+    left:2%;
+    position:relative;
+    height:140px;
+    background:url("../images/icon_leader.png") 0 78px no-repeat;
+    .position
+    {
+      @include rem(width,68px);
+      @include rem(height,63px);
+      @include rem(padding-top,20px);
+      @include rem(font-size,45px);
+      text-align: center;
+      background:url("../images/icon_large_mobile_circle.png") top left no-repeat;
+    }
+    .name
+    {
+      @include rem(top,90px);
+      @include rem(left,25px)
+    }
+    .votes{
+      @include rem(left,25px);
+      @include rem(top,120px);
+    }
+  }
+
+  .leaderboard
+  {
+    @include rem(padding-top,10px);
+    h2{
+      margin-top: 0;
+    }
+  }
+}
+
+/*   !----  $break-xsml ----   */
+@include breakpoint(xsml)
+{
+
+  .leaderboard
+  {
+    @include rem(padding-top,20px);
+    float:none;
+    width:100%;
+    border-top:$border-divider;
+    h2{
+      @include rem(font-size,26px)
+    }
+  }
+
+  .heroImage{
+    top:-33%;
+    left:-26%;
+  }
+
+  .leader
+  {
+    @include rem(height,300px);
+    width:100%;
+    float:none;
+    display:block;
+  }
+
+
+  .leadRider
+  {
+    top:13%;
+    left:26%;
+  }
+
+}
+
+
+/*   !----  $break-xxsmall ----   */
+@include breakpoint(xxsml)
+{
+
+  .heroImage{
+    top:-38%;
+    left:-25%;
+  }
+
+  .leader
+  {
+    @include rem(height,280px);
+    width:100%;
+    float:none;
+    display:block;
+  }
+
+  .leadRider
+  {
+    @include center-block();
+    top:38%;
+    left:auto;
+    width:100%;
+    position:relative;
+    height:140px;
+    background:url("../images/icon_leader.png") 0 78px no-repeat;
+    .position
+    {
+      @include rem(width,68px);
+      @include rem(height,63px);
+      @include rem(padding-top,20px);
+      @include rem(font-size,45px);
+      text-align: center;
+      background:url("../images/icon_large_mobile_circle.png") top left no-repeat;
+    }
+    .name
+    {
+      @include rem(top,90px);
+      @include rem(left,25px)
+    }
+    .votes{
+      @include rem(left,25px);
+      @include rem(top,120px);
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+

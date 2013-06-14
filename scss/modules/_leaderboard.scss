@@ -1,0 +1,66 @@
+.leaderboard{
+  @extend %clearfix;
+  @include rem(width,320px);
+  @include rem(padding,20px 0);
+  @include box-sizing(border-box);
+  float:right;
+
+  h2{
+    @include rem(font-size,24px);
+    @include rem(margin-bottom,20px);
+    color:$color-text-header;
+    font:{
+      family:$font-header;
+      weight:normal;
+    }
+  }
+
+  ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
+}
+
+.rider{
+  @include rem(height,35px);
+  @include rem(width,150px);
+  @include rem(margin-bottom, 15px);
+  float:left;
+  position:relative;
+  .position
+  {
+    @include rem(width,35px);
+    @include rem(height,30px);
+    @include rem(padding-top,3px);
+    display:inline-block;
+    color:$color-text-positionNum;
+    background:url("../images/icon_circle.png") top center no-repeat;
+    position:relative;
+    text-align: center;
+    margin:0;
+    padding-bottom: 0;
+  }
+  .name
+  {
+    @include rem(font-size, 16px);
+    display:inline;
+    position:relative;
+    top:-7px;
+    margin:0;
+    padding:0;
+
+  }
+  .votes
+  {
+    @include rem(font-size, 11px);
+    display:inline-block;
+    position:relative;
+    left:38px;
+    top:-20px;
+    margin:0;
+    padding:0;
+    color:$color-text-default;
+  }
+}
+

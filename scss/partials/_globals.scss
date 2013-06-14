@@ -1,0 +1,14 @@
+a{
+  color:$color-text-link;
+  text-decoration: none;
+  &:hover{
+    color:$color-text-hover;
+  }
+}
+
+p{
+  a{
+    border-bottom: 1px $color-text-link-border solid;
+
+  }
+}

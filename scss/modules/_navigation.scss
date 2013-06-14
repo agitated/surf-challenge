@@ -1,0 +1,69 @@
+.navigation
+{
+  @extend %clearfix;
+  @include rem(padding,20px 0);
+  border-top:$border-divider;
+  border-bottom:$border-divider;
+  margin:0;
+  display:table;
+  list-style: none;
+  width:100%;
+  font:{
+    family:$font-header-link;
+    weight:300;
+  }
+  @include rem(font-size, 24px);
+  li{
+    display:table-cell;
+    text-align: center;
+    white-space: nowrap;
+    a{
+      @include rem(padding,20px 0);
+      display:inline-block;
+      text-decoration: none;
+    }
+  }
+
+  li:first-child{
+    text-align: left;
+  }
+  li:last-child{
+    text-align: right;
+  }
+}
+
+.smallNav
+{
+  @extend %clearfix;
+  display:blocks;
+width:100%;
+
+  .smallNavButton
+  {
+    @include rem(height,50px);
+    @include rem(width,50px);
+    @include rem(margin-top,20px);
+    display:inline-block;
+    float:left;
+    background:url("../images/mobile-button.png") top center no-repeat;
+
+  }
+  .logo
+  {
+    padding-top:1%;
+    text-align: center;
+    display:inline-block;
+    float:right;
+  }
+}
+
+
+.shadow{
+  background:url("../images/header-shadow.png") top center repeat-x;
+  @include background(linear-gradient(bottom,hsla(0,0%,100%,0)0%, hsla(0,0,0,0.5)100%));
+  @include rem(height,200px);
+  width:100%;
+  position:absolute;
+  top:0;
+  z-index:2;
+}

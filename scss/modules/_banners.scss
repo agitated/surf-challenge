@@ -1,0 +1,4 @@
+.heroBanner{
+  @include center-block();
+  @include rem(margin,20px auto);
+}
