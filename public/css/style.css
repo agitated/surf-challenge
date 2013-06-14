@@ -928,7 +928,7 @@ p a {
 }
 /*   !----  $break-lrg ----   */
 @media only screen and (min-width: 970px) and (max-width: 1179px) {
-  /* line 57, ../../scss/partials/_breakpoints.scss */
+  /* line 59, ../../scss/partials/_breakpoints.scss */
   #container {
     display: block;
     margin-left: auto;
@@ -936,7 +936,7 @@ p a {
     width: 100%;
   }
 
-  /* line 63, ../../scss/partials/_breakpoints.scss */
+  /* line 65, ../../scss/partials/_breakpoints.scss */
   .header, .currentStandings {
     display: block;
     margin-left: auto;
@@ -945,19 +945,25 @@ p a {
     width: 60.625rem;
   }
 
-  /* line 69, ../../scss/partials/_breakpoints.scss */
+  /* line 70, ../../scss/partials/_breakpoints.scss */
+  .heroImage {
+    top: 0;
+    left: -2%;
+  }
+
+  /* line 76, ../../scss/partials/_breakpoints.scss */
   .smallNav {
     display: none;
   }
 }
 /*   !----  $break-med ----   */
 @media only screen and (min-width: 741px) and (max-width: 969px) {
-  /* line 79, ../../scss/partials/_breakpoints.scss */
+  /* line 86, ../../scss/partials/_breakpoints.scss */
   .smallNav {
     display: none;
   }
 
-  /* line 86, ../../scss/partials/_breakpoints.scss */
+  /* line 93, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     top: 75%;
     left: 6%;
@@ -965,33 +971,30 @@ p a {
 }
 /*   !----  $break-sml ----   */
 @media only screen and (max-width: 740px) {
-  /* line 98, ../../scss/partials/_breakpoints.scss */
+  /* line 105, ../../scss/partials/_breakpoints.scss */
   .heroBanner, .largeNav {
     display: none;
   }
 
-  /* line 103, ../../scss/partials/_breakpoints.scss */
+  /* line 110, ../../scss/partials/_breakpoints.scss */
   #container {
     background: url("../images/bg-test.jpg") #0a364c 0 20% repeat;
   }
 
-  /* line 107, ../../scss/partials/_breakpoints.scss */
+  /* line 114, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -27%;
     left: -13%;
   }
 
-  /* line 113, ../../scss/partials/_breakpoints.scss */
+  /* line 120, ../../scss/partials/_breakpoints.scss */
   .currentStandings {
     padding: 10px;
     padding: 0.625rem;
   }
 
-  /* line 119, ../../scss/partials/_breakpoints.scss */
+  /* line 126, ../../scss/partials/_breakpoints.scss */
   .leadRider {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     top: 250px;
     top: 15.625rem;
     width: 310px;
@@ -1001,7 +1004,7 @@ p a {
     height: 140px;
     background: url("../images/icon_leader.png") 0 78px no-repeat;
   }
-  /* line 128, ../../scss/partials/_breakpoints.scss */
+  /* line 134, ../../scss/partials/_breakpoints.scss */
   .leadRider .position {
     width: 68px;
     width: 4.25rem;
@@ -1014,14 +1017,14 @@ p a {
     text-align: center;
     background: url("../images/icon_large_mobile_circle.png") top left no-repeat;
   }
-  /* line 137, ../../scss/partials/_breakpoints.scss */
+  /* line 143, ../../scss/partials/_breakpoints.scss */
   .leadRider .name {
     top: 90px;
     top: 5.625rem;
     left: 25px;
     left: 1.5625rem;
   }
-  /* line 141, ../../scss/partials/_breakpoints.scss */
+  /* line 147, ../../scss/partials/_breakpoints.scss */
   .leadRider .votes {
     left: 25px;
     left: 1.5625rem;
@@ -1029,19 +1032,19 @@ p a {
     top: 7.5rem;
   }
 
-  /* line 148, ../../scss/partials/_breakpoints.scss */
+  /* line 154, ../../scss/partials/_breakpoints.scss */
   .leaderboard {
     padding-top: 10px;
     padding-top: 0.625rem;
   }
-  /* line 150, ../../scss/partials/_breakpoints.scss */
+  /* line 156, ../../scss/partials/_breakpoints.scss */
   .leaderboard h2 {
     margin-top: 0;
   }
 }
 /*   !----  $break-xsml ----   */
 @media only screen and (max-width: 660px) {
-  /* line 161, ../../scss/partials/_breakpoints.scss */
+  /* line 167, ../../scss/partials/_breakpoints.scss */
   .leaderboard {
     padding-top: 20px;
     padding-top: 1.25rem;
@@ -1049,19 +1052,19 @@ p a {
     width: 100%;
     border-top: 2px #efe6d6 solid;
   }
-  /* line 166, ../../scss/partials/_breakpoints.scss */
+  /* line 172, ../../scss/partials/_breakpoints.scss */
   .leaderboard h2 {
     font-size: 26px;
     font-size: 1.625rem;
   }
 
-  /* line 171, ../../scss/partials/_breakpoints.scss */
+  /* line 177, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -33%;
     left: -26%;
   }
 
-  /* line 177, ../../scss/partials/_breakpoints.scss */
+  /* line 183, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 300px;
     height: 18.75rem;
@@ -1070,21 +1073,22 @@ p a {
     display: block;
   }
 
-  /* line 186, ../../scss/partials/_breakpoints.scss */
+  /* line 192, ../../scss/partials/_breakpoints.scss */
   .leadRider {
-    top: 13%;
-    left: 26%;
+    top: 50px;
+    top: 3.125rem;
+    float: right;
   }
 }
 /*   !----  $break-xxsmall ----   */
 @media only screen and (max-width: 480px) {
-  /* line 198, ../../scss/partials/_breakpoints.scss */
+  /* line 204, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -38%;
     left: -25%;
   }
 
-  /* line 204, ../../scss/partials/_breakpoints.scss */
+  /* line 210, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 280px;
     height: 17.5rem;
@@ -1093,7 +1097,7 @@ p a {
     display: block;
   }
 
-  /* line 212, ../../scss/partials/_breakpoints.scss */
+  /* line 218, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     display: block;
     margin-left: auto;
@@ -1105,7 +1109,7 @@ p a {
     height: 140px;
     background: url("../images/icon_leader.png") 0 78px no-repeat;
   }
-  /* line 221, ../../scss/partials/_breakpoints.scss */
+  /* line 227, ../../scss/partials/_breakpoints.scss */
   .leadRider .position {
     width: 68px;
     width: 4.25rem;
@@ -1118,14 +1122,14 @@ p a {
     text-align: center;
     background: url("../images/icon_large_mobile_circle.png") top left no-repeat;
   }
-  /* line 230, ../../scss/partials/_breakpoints.scss */
+  /* line 236, ../../scss/partials/_breakpoints.scss */
   .leadRider .name {
     top: 90px;
     top: 5.625rem;
     left: 25px;
     left: 1.5625rem;
   }
-  /* line 234, ../../scss/partials/_breakpoints.scss */
+  /* line 240, ../../scss/partials/_breakpoints.scss */
   .leadRider .votes {
     left: 25px;
     left: 1.5625rem;

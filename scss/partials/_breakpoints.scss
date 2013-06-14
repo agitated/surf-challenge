@@ -54,6 +54,8 @@ $break-xlarge: 1180px;
 /*   !----  $break-lrg ----   */
 @include breakpoint(lrg)
 {
+
+
   #container{
     @include center-block();
     width:100%;
@@ -63,6 +65,11 @@ $break-xlarge: 1180px;
   {
     @include center-block();
     @include rem(width,970px);
+  }
+
+  .heroImage{
+    top:0;
+    left:-2%;
   }
 
   .smallNav
@@ -117,7 +124,6 @@ $break-xlarge: 1180px;
 
   .leadRider
   {
-    @include center-block();
     @include rem(top,250px);
     @include rem(width,310px);
     left:2%;
@@ -184,8 +190,8 @@ $break-xlarge: 1180px;
 
   .leadRider
   {
-    top:13%;
-    left:26%;
+    @include rem(top,50px);
+    float:right;
   }
 
 }
