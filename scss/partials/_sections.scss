@@ -20,6 +20,14 @@
   z-index:4;
   width:100%;
 }
+.leaderboardChart
+{
+  @extend %clearfix;
+  @include center-block();
+  @include box-sizing(border-box);
+  @include rem(margin-bottom,20px);
+  @include rem(width,975px);
+}
 .mainContent
 {
   @extend %clearfix;

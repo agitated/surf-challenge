@@ -7,16 +7,16 @@
 }
 
 /* line 10, ../../scss/partials/_mixins.scss */
-.currentStandings, .mainContent, .content, .sidebar, .navigation, .smallNav, .leaderboard, .leader, .leadRider, .promotionLarge {
+.currentStandings, .leaderboardChart, .mainContent, .content, .sidebar, .navigation, .smallNav, .leaderboard, .leader, .leadRider, .promotionLarge {
   *zoom: 1;
 }
 /* line 14, ../../scss/partials/_mixins.scss */
-.currentStandings:before, .mainContent:before, .content:before, .sidebar:before, .navigation:before, .smallNav:before, .leaderboard:before, .leader:before, .leadRider:before, .promotionLarge:before, .currentStandings:after, .mainContent:after, .content:after, .sidebar:after, .navigation:after, .smallNav:after, .leaderboard:after, .leader:after, .leadRider:after, .promotionLarge:after {
+.currentStandings:before, .leaderboardChart:before, .mainContent:before, .content:before, .sidebar:before, .navigation:before, .smallNav:before, .leaderboard:before, .leader:before, .leadRider:before, .promotionLarge:before, .currentStandings:after, .leaderboardChart:after, .mainContent:after, .content:after, .sidebar:after, .navigation:after, .smallNav:after, .leaderboard:after, .leader:after, .leadRider:after, .promotionLarge:after {
   content: "";
   display: table;
 }
 /* line 18, ../../scss/partials/_mixins.scss */
-.currentStandings:after, .mainContent:after, .content:after, .sidebar:after, .navigation:after, .smallNav:after, .leaderboard:after, .leader:after, .leadRider:after, .promotionLarge:after {
+.currentStandings:after, .leaderboardChart:after, .mainContent:after, .content:after, .sidebar:after, .navigation:after, .smallNav:after, .leaderboard:after, .leader:after, .leadRider:after, .promotionLarge:after {
   clear: both;
 }
 
@@ -656,6 +656,20 @@ p a {
 }
 
 /* line 24, ../../scss/partials/_sections.scss */
+.leaderboardChart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  width: 975px;
+  width: 60.9375rem;
+}
+
+/* line 32, ../../scss/partials/_sections.scss */
 .mainContent {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -663,7 +677,7 @@ p a {
   clear: both;
 }
 
-/* line 31, ../../scss/partials/_sections.scss */
+/* line 39, ../../scss/partials/_sections.scss */
 .content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -674,7 +688,7 @@ p a {
   float: left;
 }
 
-/* line 39, ../../scss/partials/_sections.scss */
+/* line 47, ../../scss/partials/_sections.scss */
 .sidebar {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -999,6 +1013,12 @@ p a {
   background: #cd61ad;
 }
 
+/* line 2, ../../scss/modules/_chart.scss */
+.chart {
+  width: 100%;
+  height: auto;
+}
+
 /*   !----  $break-xlrg ----   */
 @media only screen and (min-width: 1180px) {
   /* line 36, ../../scss/partials/_breakpoints.scss */
@@ -1056,23 +1076,23 @@ p a {
 }
 /*   !----  $break-med ----   */
 @media only screen and (min-width: 741px) and (max-width: 969px) {
-  /* line 86, ../../scss/partials/_breakpoints.scss */
+  /* line 87, ../../scss/partials/_breakpoints.scss */
   .smallNav {
     display: none;
   }
 
-  /* line 90, ../../scss/partials/_breakpoints.scss */
+  /* line 91, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     top: 75%;
     left: 6%;
   }
 
-  /* line 95, ../../scss/partials/_breakpoints.scss */
+  /* line 96, ../../scss/partials/_breakpoints.scss */
   .content {
     width: 100%;
   }
 
-  /* line 100, ../../scss/partials/_breakpoints.scss */
+  /* line 101, ../../scss/partials/_breakpoints.scss */
   .promotionLarge {
     width: 640px;
     width: 40rem;
@@ -1080,32 +1100,39 @@ p a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* line 107, ../../scss/partials/_breakpoints.scss */
+  .leaderboardChart {
+    padding: 0 20px;
+    padding: 0 1.25rem;
+    width: 100%;
+  }
 }
 /*   !----  $break-sml ----   */
 @media only screen and (max-width: 740px) {
-  /* line 112, ../../scss/partials/_breakpoints.scss */
+  /* line 119, ../../scss/partials/_breakpoints.scss */
   .heroBanner, .largeNav {
     display: none;
   }
 
-  /* line 117, ../../scss/partials/_breakpoints.scss */
+  /* line 124, ../../scss/partials/_breakpoints.scss */
   #container {
     background: url("../images/bg-test.jpg") #0a364c 0 20% repeat;
   }
 
-  /* line 121, ../../scss/partials/_breakpoints.scss */
+  /* line 128, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -27%;
     left: -13%;
   }
 
-  /* line 127, ../../scss/partials/_breakpoints.scss */
+  /* line 134, ../../scss/partials/_breakpoints.scss */
   .currentStandings {
     padding: 10px;
     padding: 0.625rem;
   }
 
-  /* line 133, ../../scss/partials/_breakpoints.scss */
+  /* line 140, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     top: 250px;
     top: 15.625rem;
@@ -1116,7 +1143,7 @@ p a {
     height: 140px;
     background: url("../images/icon_leader.png") 0 78px no-repeat;
   }
-  /* line 141, ../../scss/partials/_breakpoints.scss */
+  /* line 148, ../../scss/partials/_breakpoints.scss */
   .leadRider .position {
     width: 68px;
     width: 4.25rem;
@@ -1129,14 +1156,14 @@ p a {
     text-align: center;
     background: url("../images/icon_large_mobile_circle.png") top left no-repeat;
   }
-  /* line 150, ../../scss/partials/_breakpoints.scss */
+  /* line 157, ../../scss/partials/_breakpoints.scss */
   .leadRider .name {
     top: 90px;
     top: 5.625rem;
     left: 25px;
     left: 1.5625rem;
   }
-  /* line 154, ../../scss/partials/_breakpoints.scss */
+  /* line 161, ../../scss/partials/_breakpoints.scss */
   .leadRider .votes {
     left: 25px;
     left: 1.5625rem;
@@ -1144,58 +1171,65 @@ p a {
     top: 7.5rem;
   }
 
-  /* line 161, ../../scss/partials/_breakpoints.scss */
+  /* line 168, ../../scss/partials/_breakpoints.scss */
   .leaderboard {
     padding-top: 10px;
     padding-top: 0.625rem;
   }
-  /* line 163, ../../scss/partials/_breakpoints.scss */
+  /* line 170, ../../scss/partials/_breakpoints.scss */
   .leaderboard h2 {
     margin-top: 0;
   }
 
-  /* line 169, ../../scss/partials/_breakpoints.scss */
+  /* line 176, ../../scss/partials/_breakpoints.scss */
   .mainContent {
     padding: 0;
   }
 
-  /* line 174, ../../scss/partials/_breakpoints.scss */
+  /* line 181, ../../scss/partials/_breakpoints.scss */
   .content {
     padding: 10px;
     padding: 0.625rem;
     width: 100%;
   }
 
-  /* line 180, ../../scss/partials/_breakpoints.scss */
+  /* line 187, ../../scss/partials/_breakpoints.scss */
   .promotionLarge {
     padding-bottom: 30px;
     padding-bottom: 1.875rem;
     width: 100%;
     background: url("../images/promo-image-divers.png") 90% -20px no-repeat;
   }
-  /* line 185, ../../scss/partials/_breakpoints.scss */
+  /* line 192, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .promoTitle {
     width: 100%;
     margin-bottom: 200px;
   }
-  /* line 190, ../../scss/partials/_breakpoints.scss */
+  /* line 197, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .introduction {
     width: 100%;
   }
-  /* line 194, ../../scss/partials/_breakpoints.scss */
+  /* line 201, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .callout {
     width: 100%;
   }
-  /* line 198, ../../scss/partials/_breakpoints.scss */
+  /* line 205, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .button {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* line 211, ../../scss/partials/_breakpoints.scss */
+  .leaderboardChart {
+    padding: 0 20px;
+    padding: 0 1.25rem;
+    width: 100%;
+  }
 }
 /*   !----  $break-xsml ----   */
 @media only screen and (max-width: 660px) {
-  /* line 209, ../../scss/partials/_breakpoints.scss */
+  /* line 222, ../../scss/partials/_breakpoints.scss */
   .leaderboard {
     padding-top: 20px;
     padding-top: 1.25rem;
@@ -1204,19 +1238,19 @@ p a {
     border-top: 2px #efe6d6 solid;
     border-bottom: 2px #efe6d6 solid;
   }
-  /* line 215, ../../scss/partials/_breakpoints.scss */
+  /* line 228, ../../scss/partials/_breakpoints.scss */
   .leaderboard h2 {
     font-size: 26px;
     font-size: 1.625rem;
   }
 
-  /* line 220, ../../scss/partials/_breakpoints.scss */
+  /* line 233, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -33%;
     left: -26%;
   }
 
-  /* line 226, ../../scss/partials/_breakpoints.scss */
+  /* line 239, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 300px;
     height: 18.75rem;
@@ -1225,18 +1259,18 @@ p a {
     display: block;
   }
 
-  /* line 233, ../../scss/partials/_breakpoints.scss */
+  /* line 246, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     top: 50px;
     top: 3.125rem;
     float: right;
   }
 
-  /* line 238, ../../scss/partials/_breakpoints.scss */
+  /* line 251, ../../scss/partials/_breakpoints.scss */
   .promotionLarge {
     background: url("../images/promo-image-divers.png") 90% -40px no-repeat;
   }
-  /* line 241, ../../scss/partials/_breakpoints.scss */
+  /* line 254, ../../scss/partials/_breakpoints.scss */
   .promotionLarge .promoTitle {
     margin-bottom: 240px;
     margin-bottom: 15rem;
@@ -1244,13 +1278,13 @@ p a {
 }
 /*   !----  $break-xxsmall ----   */
 @media only screen and (max-width: 480px) {
-  /* line 252, ../../scss/partials/_breakpoints.scss */
+  /* line 265, ../../scss/partials/_breakpoints.scss */
   .heroImage {
     top: -38%;
     left: -25%;
   }
 
-  /* line 258, ../../scss/partials/_breakpoints.scss */
+  /* line 271, ../../scss/partials/_breakpoints.scss */
   .leader {
     height: 280px;
     height: 17.5rem;
@@ -1259,7 +1293,7 @@ p a {
     display: block;
   }
 
-  /* line 266, ../../scss/partials/_breakpoints.scss */
+  /* line 279, ../../scss/partials/_breakpoints.scss */
   .leadRider {
     display: block;
     margin-left: auto;
@@ -1271,7 +1305,7 @@ p a {
     height: 140px;
     background: url("../images/icon_leader.png") 0 78px no-repeat;
   }
-  /* line 275, ../../scss/partials/_breakpoints.scss */
+  /* line 288, ../../scss/partials/_breakpoints.scss */
   .leadRider .position {
     width: 68px;
     width: 4.25rem;
@@ -1284,14 +1318,14 @@ p a {
     text-align: center;
     background: url("../images/icon_large_mobile_circle.png") top left no-repeat;
   }
-  /* line 284, ../../scss/partials/_breakpoints.scss */
+  /* line 297, ../../scss/partials/_breakpoints.scss */
   .leadRider .name {
     top: 90px;
     top: 5.625rem;
     left: 25px;
     left: 1.5625rem;
   }
-  /* line 288, ../../scss/partials/_breakpoints.scss */
+  /* line 301, ../../scss/partials/_breakpoints.scss */
   .leadRider .votes {
     left: 25px;
     left: 1.5625rem;

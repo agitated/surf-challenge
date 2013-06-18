@@ -77,6 +77,7 @@ $break-xlarge: 1180px;
     display:none;
   }
 
+
 }
 
 /*   !----  $break-med ----   */
@@ -100,6 +101,12 @@ $break-xlarge: 1180px;
   {
     @include rem(width,640px);
     @include center-block();
+  }
+
+  .leaderboardChart
+  {
+    @include rem(padding,0 20px);
+    width:100%;
   }
 }
 
@@ -198,6 +205,12 @@ $break-xlarge: 1180px;
     {
       @include center-block()
     }
+  }
+
+  .leaderboardChart
+  {
+    @include rem(padding,0 20px);
+    width:100%;
   }
 }
 
