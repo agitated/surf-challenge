@@ -1,3 +1,8 @@
+#container
+{
+  @include rem(min-width,320px);
+}
+
 a{
   color:$color-text-link;
   text-decoration: none;
@@ -14,4 +19,9 @@ p{
     border-bottom: 1px $color-text-link-border solid;
 
   }
+}
+
+section
+{
+  @include rem(margin-bottom, 40px);
 }

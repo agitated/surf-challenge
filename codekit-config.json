@@ -2,105 +2,70 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/scss\/style.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/style.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/scss\/modules\/_promotion.scss" : {
+    "\/scss\/modules\/_banners.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_promotion.scss",
+      "inputAbbreviatedPath" : "\/scss\/modules\/_banners.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_promotion.css",
+      "outputAbbreviatedPath" : "\/public\/css\/_banners.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/mobile-button.png" : {
+    "\/public\/images\/icon_large_circle.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/mobile-button.png",
+      "inputAbbreviatedPath" : "\/public\/images\/icon_large_circle.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/mobile-button.png",
-      "initialSize" : 1507,
+      "outputAbbreviatedPath" : "\/public\/images\/icon_large_circle.png",
+      "initialSize" : 2246,
       "fileType" : 8192
     },
-    "\/archive\/promo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/promo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/promo.png",
-      "initialSize" : 84832,
-      "fileType" : 8192
-    },
-    "\/public\/images\/icon_circle.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icon_circle.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icon_circle.png",
-      "initialSize" : 1631,
-      "fileType" : 8192
-    },
-    "\/public\/css\/style.css" : {
+    "\/public\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/style.css",
+      "inputAbbreviatedPath" : "\/public\/index.html",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "fileType" : 2048
     },
-    "\/public\/images\/icon_large_mobile_circle.png" : {
+    "\/public\/images\/bg-hero-test2.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icon_large_mobile_circle.png",
+      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test2.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icon_large_mobile_circle.png",
-      "initialSize" : 2524,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test2.jpg",
+      "initialSize" : 132923,
+      "fileType" : 4096
     },
-    "\/scss\/partials\/_mixins.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_mixins.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_mixins.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/public\/images\/promo-image-divers.png" : {
+    "\/public\/images\/bg-hero-test3.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test3.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
-      "initialSize" : 504930,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test3.jpg",
+      "initialSize" : 201113,
+      "fileType" : 4096
+    },
+    "\/public\/images\/bg-hero-test4.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test4.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test4.jpg",
+      "initialSize" : 151935,
+      "fileType" : 4096
     },
     "\/scss\/partials\/_base.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -114,15 +79,154 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/modules\/_leader.scss" : {
+    "\/archive\/promo_image.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/promo_image.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/promo_image.png",
+      "initialSize" : 541332,
+      "fileType" : 8192
+    },
+    "\/public\/images\/title_bigwavemates.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
+      "initialSize" : 18553,
+      "fileType" : 8192
+    },
+    "\/archive\/imgtest.haml" : {
+      "inputAbbreviatedPath" : "\/archive\/imgtest.haml",
+      "outputAbbreviatedPath" : "\/public\/imgtest.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
+    },
+    "\/scss\/partials\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
+      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
+      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/archive\/backgound.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/backgound.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/backgound.jpg",
+      "initialSize" : 174856,
+      "fileType" : 4096
+    },
+    "\/public\/images\/promo-image-divers.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "initialSize" : 504930,
+      "fileType" : 8192
+    },
+    "\/public\/images\/promo-image-large.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-large.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-large.png",
+      "initialSize" : 75799,
+      "fileType" : 8192
+    },
+    "\/public\/images\/logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/logo.png",
+      "initialSize" : 9859,
+      "fileType" : 8192
+    },
+    "\/scss\/modules\/_leaderboard.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_leaderboard.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_leaderboard.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/public\/images\/promo-image-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-small.png",
+      "initialSize" : 44430,
+      "fileType" : 8192
+    },
+    "\/public\/images\/bg-home-hero-ryan-hipwood.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/bg-home-hero-ryan-hipwood.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/bg-home-hero-ryan-hipwood.jpg",
+      "initialSize" : 107345,
+      "fileType" : 4096
+    },
+    "\/archive\/bg_test.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "initialSize" : 39035,
+      "fileType" : 4096
+    },
+    "\/scss\/partials\/_globals.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/_globals.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_globals.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -138,14 +242,90 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/config.rb" : {
+    "\/public\/images\/title-promo-header.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
+      "inputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
+      "initialSize" : 31666,
+      "fileType" : 8192
+    },
+    "\/public\/images\/icon_circle.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/icon_circle.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icon_circle.png",
+      "initialSize" : 1631,
+      "fileType" : 8192
+    },
+    "\/public\/images\/title_bigwavemates_small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/title_bigwavemates_small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/title_bigwavemates_small.png",
+      "initialSize" : 26354,
+      "fileType" : 8192
+    },
+    "\/public\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/style.css",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
+      "fileType" : 16
+    },
+    "\/public\/images\/bg-test.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/bg-test.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/bg-test.jpg",
+      "initialSize" : 143201,
+      "fileType" : 4096
+    },
+    "\/archive\/chart-test.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/chart-test.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/scss\/modules\/_promotion.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_promotion.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_promotion.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/archive\/promo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/promo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/promo.png",
+      "initialSize" : 84832,
+      "fileType" : 8192
     },
     "\/public\/images\/icon_leader.png" : {
       "ignoreWasSetByUser" : 0,
@@ -170,195 +350,73 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/archive\/backgound.jpg" : {
+    "\/public\/js\/highcharts\/exporting.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/backgound.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/backgound.jpg",
-      "initialSize" : 174856,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/public\/js\/highcharts\/exporting.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/js\/highcharts\/exporting-ck.js",
+      "fileType" : 64
     },
-    "\/scss\/partials\/_globals.scss" : {
+    "\/scss\/modules\/_leader.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_globals.scss",
+      "inputAbbreviatedPath" : "\/scss\/modules\/_leader.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_globals.css",
+      "outputAbbreviatedPath" : "\/public\/css\/_leader.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/logo.png" : {
+    "\/public\/images\/chart-rider-head-1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/logo.png",
+      "inputAbbreviatedPath" : "\/public\/images\/chart-rider-head-1.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/logo.png",
-      "initialSize" : 9859,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-rider-head-1.png",
+      "initialSize" : 2534,
       "fileType" : 8192
     },
-    "\/public\/images\/bg-hero-test4.jpg" : {
+    "\/public\/images\/background_v2.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test4.jpg",
+      "inputAbbreviatedPath" : "\/public\/images\/background_v2.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test4.jpg",
-      "initialSize" : 151935,
+      "outputAbbreviatedPath" : "\/public\/images\/background_v2.jpg",
+      "initialSize" : 98481,
       "fileType" : 4096
     },
-    "\/public\/images\/bg-test.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/bg-test.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/bg-test.jpg",
-      "initialSize" : 143201,
-      "fileType" : 4096
-    },
-    "\/public\/images\/bg-hero-test3.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test3.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test3.jpg",
-      "initialSize" : 201113,
-      "fileType" : 4096
-    },
-    "\/public\/index.html" : {
+    "\/scss\/partials\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/public\/images\/icon_circle_leader.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
-      "initialSize" : 2918,
-      "fileType" : 8192
-    },
-    "\/archive\/promo_image.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/promo_image.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/promo_image.png",
-      "initialSize" : 541332,
-      "fileType" : 8192
-    },
-    "\/public\/images\/bg-hero-home.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-home.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-home.jpg",
-      "initialSize" : 317920,
-      "fileType" : 4096
-    },
-    "\/archive\/imgtest.haml" : {
-      "inputAbbreviatedPath" : "\/archive\/imgtest.haml",
-      "outputAbbreviatedPath" : "\/public\/imgtest.html",
-      "outputPathIsSetByUser" : 0,
-      "escapeHTMLCharacters" : 0,
-      "useUnixNewlines" : 0,
-      "useCDATA" : 0,
-      "ignore" : 0,
-      "noEscapeInAttributes" : 0,
-      "outputFormat" : 2,
-      "useDoubleQuotes" : 0,
-      "ignoreWasSetByUser" : 0,
-      "hidden" : 0,
-      "fileType" : 256,
-      "outputStyle" : 0
-    },
-    "\/public\/images\/bg-hero-test2.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-test2.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-test2.jpg",
-      "initialSize" : 132923,
-      "fileType" : 4096
-    },
-    "\/public\/images\/chart.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart.png",
-      "initialSize" : 353627,
-      "fileType" : 8192
-    },
-    "\/public\/images\/icon_large_circle.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icon_large_circle.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icon_large_circle.png",
-      "initialSize" : 2246,
-      "fileType" : 8192
-    },
-    "\/public\/images\/banner-leaderboard.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
-      "initialSize" : 46386,
-      "fileType" : 4096
-    },
-    "\/archive\/chart-test.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/chart-test.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/scss\/partials\/_breakpoints.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_breakpoints.scss",
+      "inputAbbreviatedPath" : "\/scss\/partials\/_mixins.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_breakpoints.css",
+      "outputAbbreviatedPath" : "\/public\/css\/_mixins.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/public\/images\/icon_large_mobile_circle.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/icon_large_mobile_circle.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icon_large_mobile_circle.png",
+      "initialSize" : 2524,
+      "fileType" : 8192
     },
     "\/scss\/modules\/_navigation.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -372,59 +430,25 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/partials\/_normalize.scss" : {
+    "\/public\/js\/highcharts\/highcharts.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
+      "inputAbbreviatedPath" : "\/public\/js\/highcharts\/highcharts.js",
       "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/js\/highcharts\/highcharts-ck.js",
+      "fileType" : 64
     },
-    "\/public\/images\/title-promo-header.png" : {
+    "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/title-promo-header.png",
-      "initialSize" : 31666,
-      "fileType" : 8192
-    },
-    "\/archive\/imgtest.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/imgtest.html",
+      "inputAbbreviatedPath" : "\/config.rb",
       "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/archive\/bg_test.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "initialSize" : 39035,
-      "fileType" : 4096
-    },
-    "\/archive\/promo_v2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/promo_v2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/promo_v2.png",
-      "initialSize" : 452778,
-      "fileType" : 8192
+      "fileType" : 32768
     },
     "\/haml\/index.haml" : {
       "inputAbbreviatedPath" : "\/haml\/index.haml",
@@ -442,6 +466,83 @@
       "fileType" : 256,
       "outputStyle" : 0
     },
+    "\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/style.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/public\/navtest.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/navtest.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/public\/images\/icon_circle_leader.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
+      "initialSize" : 2918,
+      "fileType" : 8192
+    },
+    "\/public\/images\/banner-leaderboard.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
+      "initialSize" : 46386,
+      "fileType" : 4096
+    },
+    "\/scss\/partials\/_breakpoints.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/_breakpoints.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_breakpoints.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/public\/images\/chart-pos-number.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
+      "initialSize" : 1451,
+      "fileType" : 8192
+    },
+    "\/public\/images\/bottles.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/bottles.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/bottles.png",
+      "initialSize" : 232747,
+      "fileType" : 8192
+    },
     "\/scss\/modules\/_chart.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -454,29 +555,78 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/modules\/_banners.scss" : {
+    "\/archive\/imgtest.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_banners.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_banners.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/archive\/imgtest.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
-    "\/scss\/modules\/_leaderboard.scss" : {
+    "\/public\/images\/mobile-button.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_leaderboard.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_leaderboard.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/images\/mobile-button.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/mobile-button.png",
+      "initialSize" : 1507,
+      "fileType" : 8192
+    },
+    "\/public\/images\/bg-hero-home.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/bg-hero-home.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/bg-hero-home.jpg",
+      "initialSize" : 317920,
+      "fileType" : 4096
+    },
+    "\/public\/images\/promo-image-small.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-small.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-small.jpg",
+      "initialSize" : 34700,
+      "fileType" : 4096
+    },
+    "\/public\/images\/chart.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart.png",
+      "initialSize" : 353627,
+      "fileType" : 8192
+    },
+    "\/public\/chart-test.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/chart-test.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/archive\/promo_v2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/promo_v2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/promo_v2.png",
+      "initialSize" : 452778,
+      "fileType" : 8192
     }
   },
   "manualImportLinks" : [

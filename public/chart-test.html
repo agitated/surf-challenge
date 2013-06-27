@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+
+
+    var riderLinks = [
+            'Jeff Rowley',
+            'Richie Vaculik',
+            'Riley Laing',
+            'Kerby Brown',
+            'Marti Paradisis',
+            'Dean Morrison',
+            'Anthony Walsh',
+            'Laurie Towner',
+            'Ryan Hipwood',
+            'Dean Bowen',
+            'Tyler Hollmer-Cross',
+            'Jamie Mitchell',
+            'Koby Abberton',
+            'Koby Abberton',
+            'Koby Abberton',
+        ];
+
+        var riderLabels = riderLinks.slice();
+        riderLabels.unshift('')
+
+        $('#container').highcharts({
+            chart: {
+                type: 'spline',
+                renderTo : 'container',
+                className:'chart',
+                backgroundColor:'rgba(255, 255, 255, 0)',
+
+            },
+            legend: {
+                        enabled: false
+                    },
+            exporting: {
+                       enabled: false
+                   },
+            title: {
+                text: null
+            },
+
+            xAxis: {
+                categories: ['START','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                offset:40,
+                gridLineWidth: 1,
+                gridLineColor:'#063d57',
+                lineColor:'#063d57',
+                lineWidth: 2,
+                tickColor:'#063d57',
+               max:6
+            },
+            yAxis: [{
+                title: {
+                    text:null
+                },
+                tickInterval: 1,
+                reversed:true,
+                showFirstLabel:false,
+                showLastLabel:false,
+                gridLineDashStyle: 'dash',
+                gridLineWidth: 0,
+                opposite:true,
+                useHTML: true,
+                min:0,
+                max: 16,
+                showEmpty:true,
+                labels:{
+                    useHTML:true,
+                    zIndex: 1,
+                    formatter: function() {
+                        return '<span class="riderPos">'+ this.value+'</span>';
+                    },
+                    style: {
+                        color: '#a9cfcc',
+                        fontWeight: 'bold',
+                    }
+                }
+
+            },{ // Secondary yAxis
+                categories: riderLabels,
+                reversed:true,
+                showLastLabel:false,
+               gridLineWidth: 0,
+               showEmpty:true,
+                labels:{
+                    useHTML:true,
+                    zIndex: 1,
+                    formatter: function() {
+                       var className = String(this.value).trim();
+                       className = className.replace(/\s+/g, '').toLowerCase();
+                        return '<span class="rider-'+className+'">'+ this.value+'</span>';
+                    },
+                    style: {
+                        color: '#6D869F',
+                        fontWeight: 'bold'
+                    }
+                },
+                linkedTo: 0,
+                title: {
+                    text:null
+                },
+            }],
+            tooltip: {
+                crosshairs: true,
+                shared: false,
+                borderWidth: 2,
+                borderRadius: 3,
+                shadow: false,
+                useHTML: true,
+                backgroundColor: "rgba(0,0,0,0.7)",
+                positioner: function(boxWidth, boxHeight, point) {
+                        return {x:point.plotX + 110,y:point.plotY+30};
+                    },
+                formatter: function() {
+                      return ("<div class='tooltip'><span style='color:"+ this.series.color+"'>" + this.series.name +' : '+  this.y + "</div>");
+                  }
+            },
+            plotOptions: {
+                areaspline: {
+                                    fillOpacity: 0.2,
+                                    threshold: 12
+                                },
+                                useHTML: true,
+
+            },
+            series: [
+            {
+                name: riderLinks[0],
+                type: 'areaspline',
+                color:"rgba(26,188,156,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(26,188,156,0.2)'],
+                    [1, 'rgba(26,188,156,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [1, 1, 15]
+            },
+            {
+                name: riderLinks[1],
+                type: 'areaspline',
+                color:"rgba(25,139,70,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(25,139,70,0.2)'],
+                    [1, 'rgba(25,139,70,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [2, 2, 14]
+            },
+            {
+                name: riderLinks[2],
+                type: 'areaspline',
+                color:"rgba(149,193,54,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(149,193,54,0.2)'],
+                    [1, 'rgba(149,193,54,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [3, 3, 13]
+            },
+            {
+                name: riderLinks[3],
+                type: 'areaspline',
+                color:"rgba(186,188,33,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(186,188,33,0.2)'],
+                    [1, 'rgba(186,188,33,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [4, 4, 12]
+            },
+            {
+                name: riderLinks[4],
+                type: 'areaspline',
+                color:"rgba(188,124,33,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(188,124,33,0.2)'],
+                    [1, 'rgba(188,124,33,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [5, 5, 11]
+            },
+            {
+                name: riderLinks[5],
+                type: 'areaspline',
+                color:"rgba(213,64,18,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(213,64,18,0.2)'],
+                    [1, 'rgba(213,64,18,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [6, 6, 10]
+            },
+            {
+                name: riderLinks[6],
+                type: 'areaspline',
+                color:"rgba(228,18,18,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(228,18,18,0.2)'],
+                    [1, 'rgba(228,18,18,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [7, 7, 9]
+            },
+            {
+                name: riderLinks[7],
+                type: 'areaspline',
+                color:"rgba(228,18,127,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(228,18,127,0.2)'],
+                    [1, 'rgba(228,18,127,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [8, 8, 8]
+            },
+            {
+                name: riderLinks[8],
+                type: 'areaspline',
+                color:"rgba(228,18,216,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(228,18,216,0.2)'],
+                    [1, 'rgba(228,18,216,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [9, 9, 7]
+            },
+            {
+                name: riderLinks[9],
+                type: 'areaspline',
+                color:"rgba(176,18,228,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(176,18,228,0.2)'],
+                    [1, 'rgba(176,18,228,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [10,10, 6]
+            },
+            {
+                name: riderLinks[10],
+                type: 'areaspline',
+                color:"rgba(112,18,228,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(112,18,228,0.2)'],
+                    [1, 'rgba(112,18,228,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [11,11, 5]
+            },
+            {
+                name: riderLinks[11],
+                type: 'areaspline',
+                color:"rgba(53,18,228,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(53,18,228,0.2)'],
+                    [1, 'rgba(53,18,228,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [12,12, 4]
+            },
+            {
+                name: riderLinks[12],
+                type: 'areaspline',
+                color:"rgba(26,188,156,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(26,188,156,0.2)'],
+                    [1, 'rgba(26,188,156,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [13,13, 3]
+            },
+            {
+                name: riderLinks[13],
+                type: 'areaspline',
+                color:"rgba(25,120,227,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(25,120,227,0.2)'],
+                    [1, 'rgba(25,120,227,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [14,14, 2]
+            },
+            {
+                name: riderLinks[14],
+                type: 'areaspline',
+                color:"rgba(26,187,227,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(26,187,227,0.2)'],
+                    [1, 'rgba(26,187,227,0)']
+                  ]
+                },
+                marker: {
+                    symbol: 'url(images/chart-rider-head-1.png)'
+                },
+                data: [15,15, 1]
+            }
+            ]
+        });
+    });
+
+
+		</script>
+    <style type="text/css">
+        body
+        {
+            background: url("images/bg-test.jpg") #0a364c 0 20% repeat;
+
+        }
+        .riderPos
+        {
+           background: url("images/chart-pos-number.png") transparent 0 20% no-repeat;
+           width:21px;
+           height:23px;
+           font-size: 9px;
+        padding-top: 6px;
+            text-align: center;
+           display: inline-block;
+        }
+        .tooltip, .highcharts-tooltip span {
+            z-index:9999 !important;
+            display:block;
+            background-color: #333;
+        }
+        .highcharts-tooltip{
+            z-index:9999 !important;
+            display:block;
+            position:absolute;
+        }
+        .riderName{
+            z-index: 1!important;
+            display:inline-block;
+            position:relative;
+        }
+        .label ,.highcharts-axis-labels{
+         z-index: 1!important;
+        }
+    </style>
+	</head>
+	<body>
+<script src="js/highcharts/highcharts.js"></script>
+<script src="js/highcharts/exporting.js"></script>
+
+<div id="container" style="min-width: 100%; height: 530px; margin: 0 auto"></div>
+
+	</body>
+</html>

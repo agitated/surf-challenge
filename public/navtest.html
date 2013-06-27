@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Equidistant Objects with CSS</title>
+<link type="text/css" rel="stylesheet" href="/SyntaxHighlighter/dpSyntaxHighlighter.css" />
+<style type="text/css">
+* {margin:0;padding:0;}
+body {background:#fff;}
+h1,p {padding:20px;}
+ul {position:relative;min-width:400px;}
+.markup{width:90%;margin: 20px auto;}
+li {list-style-type:none;position:absolute;left:0;font-weight: bold;}
+li.two {left:20%;margin-left:-22px;}
+li.three {left:40%;margin-left:-44px;}
+li.four{left:60%;margin-left:-64px;}
+li.five {left:80%;margin-left:-80px;}
+li.six{position:relative;text-align:right;top:18px;}
+</style>
+</head>
+<body>
+<h1>Equidistant Objects with CSS</h1>
+<p>First riff on Chris Coyier's <a href="http://css-tricks.com/equidistant-objects-with-css/">original idea</a>.<br />
+The method here relies on "<code>position:absolute</code>" rather than &quot;<code>float</code>&quot; while keeping rows in the HTML flow.</p>
+<p>This <a href="display-table_and_setExpression.asp">other solution</a> is much cleaner, but relies on <code>setExpression</code> to work in IE.</p>
+<ul class="markup">
+    <li class="six">LOGIN</li>
+<li class="one"><a href="http://www.google.com">ABOUT</a></li>
+<li class="two">PRIZES</li>
+<li class="three">RIDERS</li>
+<li class="four">VIDEOS</li>
+<li class="five">REGISTER</li>
+
+</ul>
+</body>
+</html>

@@ -44,11 +44,11 @@ $break-xlarge: 1180px;
     @include rem(width,970px);
   }
 
-  .smallNav
+  .smallNav,
+  .promoSmall
   {
     display:none;
   }
-
 }
 
 /*   !----  $break-lrg ----   */
@@ -72,21 +72,17 @@ $break-xlarge: 1180px;
     left:-2%;
   }
 
-  .smallNav
+  .smallNav,
+  .promoSmall
   {
-    display:none;
+    display:none !important;
   }
-
 
 }
 
 /*   !----  $break-med ----   */
 @include breakpoint(med)
 {
-  .smallNav
-  {
-    display:none;
-  }
   .leadRider
   {
     top:75%;
@@ -102,40 +98,32 @@ $break-xlarge: 1180px;
     @include rem(width,640px);
     @include center-block();
   }
-
   .leaderboardChart
   {
     @include rem(padding,0 20px);
     width:100%;
+  }
+  .promoSmall,
+  .smallNav{
+    display:none !important;
   }
 }
 
 /*   !----  $break-sml ----   */
 @include breakpoint(sml)
 {
-
-
-  .heroBanner,.largeNav
-  {
-    display:none;
-  }
-
   #container
   {
     background:url("../images/bg-test.jpg") $color-background 0 20% repeat;
   }
-
   .heroImage{
     top:-27%;
     left:-13%;
   }
-
   .currentStandings
   {
     @include rem(padding,10px);
   }
-
-
   .leadRider
   {
     @include rem(top,250px);
@@ -176,41 +164,21 @@ $break-xlarge: 1180px;
   {
     padding:0;
   }
-
   .content
   {
     @include rem(padding,10px);
     width:100%;
   }
-
-  .promotionLarge
-  {
-    @include rem(padding-bottom,30px);
-    width: 100%;
-    background:url("../images/promo-image-divers.png")90% -20px no-repeat;
-    .promoTitle
-    {
-      width:100%;
-      margin-bottom: 200px;
-    }
-    .introduction
-    {
-      width:100%;
-    }
-    .callout
-    {
-      width:100%;
-    }
-    .button
-    {
-      @include center-block()
-    }
-  }
-
   .leaderboardChart
   {
     @include rem(padding,0 20px);
     width:100%;
+  }
+  .heroBanner,
+  .largeNav,
+  .promoSmall
+  {
+    display:none;
   }
 }
 
@@ -249,10 +217,21 @@ $break-xlarge: 1180px;
   }
   .promotionLarge
   {
-    background:url("../images/promo-image-divers.png")90% -40px no-repeat;
+    display:none;
+  }
+  .promoSmall
+  {
+    display:block;
+    background:
+    {
+      size:95%;
+      position: 70% 60%;
+      repeat:no-repeat;
+    }
     .promoTitle
     {
-      @include rem(margin-bottom, 240px)
+      margin-bottom: 80%;
+      width:100%;
     }
   }
 }
@@ -303,7 +282,20 @@ $break-xlarge: 1180px;
       @include rem(top,120px);
     }
   }
-
+  .promoSmall
+  {
+    background:
+    {
+      size:100%;
+      position: 80% 50%;
+      repeat:no-repeat;
+    }
+    .promoTitle
+    {
+      margin-bottom: 80%;
+      width:100%;
+    }
+  }
 
 }
 

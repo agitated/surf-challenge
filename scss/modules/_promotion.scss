@@ -5,10 +5,10 @@
   @include rem(padding-bottom, 40px);
   border-bottom: $border-divider;
   width:100%;
-  background:url("../images/promo-image-divers.png") center 0 no-repeat;
+  background:url("../images/promo-image-large.png") right -20px no-repeat;
   .promoTitle
   {
-    @include rem(margin-bottom, 20px);
+    @include rem(margin-bottom, 10px);
   }
   .introduction
   {
@@ -17,20 +17,55 @@
   }
   .callout
   {
-    @include rem(width, 310px);
-    @include rem(font-size, 22px);
+    @include rem(width, 270px);
+    @include rem(font-size, 18px);
     @include rem(line-height , 30px);
     @include rem(margin-bottom, 30px);
+    margin-top:0;
     font-weight:700;
     color:$color-text-promo-callout;
-
   }
   .button
   {
     @include button();
-    @include rem(width, 310px);
+    @include rem(width, 260px);
     background: $color-promo-button;
-
+    &:hover{
+      color:$color-promo-button;
+      font-weight:bold;
+    }
   }
 
+}
+
+.promoSmall
+{
+  @extend %clearfix;
+  @include box-sizing(border-box);
+  @include rem(padding-bottom, 40px);
+  @include rem(max-width, 640px);
+  border-bottom: $border-divider;
+  width:100%;
+  background:
+  {
+    image: url("../images/promo-image-small.jpg");
+    size:100%;
+    position: 80% 70%;
+    repeat:no-repeat;
+  }
+  .promoTitle
+  {
+    margin-bottom: 74%;
+    width:100%;
+  }
+  .button
+  {
+    @include button();
+    width:100%;
+    background: $color-promo-button;
+    &:hover{
+      color:$color-promo-button;
+      font-weight:bold;
+    }
+  }
 }

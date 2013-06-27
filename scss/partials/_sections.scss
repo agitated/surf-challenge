@@ -1,7 +1,7 @@
 #container
 {
   position:relative;
-  background:url("../images/bg-test.jpg") $color-background 0 20% repeat;
+  background:url("../images/background_v2.jpg") $color-background 0 765px no-repeat;
 }
 .header
 {
@@ -15,7 +15,7 @@
 {
   @extend %clearfix;
   @include box-sizing(border-box);
-  @include rem(margin-bottom,20px);
+  @include rem(margin-bottom,60px);
   position:relative;
   z-index:4;
   width:100%;
@@ -33,6 +33,7 @@
   @extend %clearfix;
   @include box-sizing(border-box);
   clear:both;
+
 }
 
 .content
