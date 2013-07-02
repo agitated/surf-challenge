@@ -3,15 +3,16 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Highcharts Example</title>
-
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <link href='css/style.css' rel='stylesheet'>
 		<script type="text/javascript">
 $(function () {
 
 
-    var riderLinks = [
-            'Jeff Rowley',
+   /* var riderLinks = [
             'Richie Vaculik',
+            'Jeff Rowley',
             'Riley Laing',
             'Kerby Brown',
             'Marti Paradisis',
@@ -22,10 +23,28 @@ $(function () {
             'Dean Bowen',
             'Tyler Hollmer-Cross',
             'Jamie Mitchell',
-            'Koby Abberton',
-            'Koby Abberton',
-            'Koby Abberton',
-        ];
+            'Brett Burcher',
+            'Josiah Schmucker',
+            'Asher Pacey',
+        ];*/
+
+        var riderLinks = [
+                'Richie',
+                'Jeff',
+                'Riley',
+                'Kerby',
+                'Marti',
+                'Dean',
+                'Anthony',
+                'Laurie',
+                'Ryan',
+                'Dean',
+                'Tyler',
+                'Jamie',
+                'Brett',
+                'Josiah',
+                'Asher',
+            ];
 
         var riderLabels = riderLinks.slice();
         riderLabels.unshift('')
@@ -36,7 +55,9 @@ $(function () {
                 renderTo : 'container',
                 className:'chart',
                 backgroundColor:'rgba(255, 255, 255, 0)',
-
+            },
+            credits: {
+              enabled: false
             },
             legend: {
                         enabled: false
@@ -49,13 +70,22 @@ $(function () {
             },
 
             xAxis: {
-                categories: ['START','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                offset:40,
+                categories: ['start','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 gridLineWidth: 1,
                 gridLineColor:'#063d57',
                 lineColor:'#063d57',
                 lineWidth: 2,
                 tickColor:'#063d57',
+                tickmarkPlacement: 'on',
+                useHTML: true,
+                labels:{
+                    useHTML:true,
+                    x:10,
+                    y:30,
+                    formatter: function() {
+                        return '<span class="chartDate">'+ this.value+'</span>';
+                    },
+                },
                max:6
             },
             yAxis: [{
@@ -91,17 +121,21 @@ $(function () {
                 showLastLabel:false,
                gridLineWidth: 0,
                showEmpty:true,
+               marker:{
+                enabled:false,
+               },
                 labels:{
                     useHTML:true,
                     zIndex: 1,
                     formatter: function() {
                        var className = String(this.value).trim();
                        className = className.replace(/\s+/g, '').toLowerCase();
-                        return '<span class="rider-'+className+'">'+ this.value+'</span>';
+                        return '<span class="riderLabel rider-'+className+'">'+ this.value+'</span>';
                     },
                     style: {
                         color: '#6D869F',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        width:'140px',
                     }
                 },
                 linkedTo: 0,
@@ -126,31 +160,24 @@ $(function () {
             },
             plotOptions: {
                 areaspline: {
-                                    fillOpacity: 0.2,
-                                    threshold: 12
-                                },
-                                useHTML: true,
-
+                    fillOpacity: 0.2,
+                     threshold: 12,
+                 },
+                useHTML: true,
+                series: {
+                    marker: {
+                                    symbol: 'circle',
+                            },
+                                states: {
+                                    hover: {
+                                        lineWidth: 4
+                                    }
+                                }
+                            }
             },
             series: [
             {
                 name: riderLinks[0],
-                type: 'areaspline',
-                color:"rgba(26,188,156,1)",
-                fillColor : {
-                  linearGradient : [0, 0, 0, 250],
-                  stops : [
-                    [0, 'rgba(26,188,156,0.2)'],
-                    [1, 'rgba(26,188,156,0)']
-                  ]
-                },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [1, 1, 15]
-            },
-            {
-                name: riderLinks[1],
                 type: 'areaspline',
                 color:"rgba(25,139,70,1)",
                 fillColor : {
@@ -160,10 +187,20 @@ $(function () {
                     [1, 'rgba(25,139,70,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
+                data: [{y:1,marker:{symbol: 'url(images/chart-richie-vas.png)'}}, 6, 15]
+            },
+            {
+                name: riderLinks[1],
+                type: 'areaspline',
+                color:"rgba(61,202,18,1)",
+                fillColor : {
+                  linearGradient : [0, 0, 0, 250],
+                  stops : [
+                    [0, 'rgba(61,202,18,0.2)'],
+                    [1, 'rgba(61,202,18,0)']
+                  ]
                 },
-                data: [2, 2, 14]
+                data: [{y:2,marker:{symbol: 'url(images/chart-jeff-rowley.png)'}}, 4, 14]
             },
             {
                 name: riderLinks[2],
@@ -176,10 +213,7 @@ $(function () {
                     [1, 'rgba(149,193,54,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [3, 3, 13]
+                data: [{y:3,marker:{symbol: 'url(images/chart-riley-liang.png)'}}, 5, 13]
             },
             {
                 name: riderLinks[3],
@@ -192,10 +226,7 @@ $(function () {
                     [1, 'rgba(186,188,33,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [4, 4, 12]
+                data: [{y:4,marker:{symbol: 'url(images/chart-kerby-brown.png)'}}, 2, 12]
             },
             {
                 name: riderLinks[4],
@@ -208,26 +239,20 @@ $(function () {
                     [1, 'rgba(188,124,33,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [5, 5, 11]
+                data: [{y:5,marker:{symbol: 'url(images/chart-marty-p.png)'}}, 3, 11]
             },
             {
                 name: riderLinks[5],
                 type: 'areaspline',
-                color:"rgba(213,64,18,1)",
+                color:"rgba(175,68,35,1)",
                 fillColor : {
                   linearGradient : [0, 0, 0, 250],
                   stops : [
-                    [0, 'rgba(213,64,18,0.2)'],
-                    [1, 'rgba(213,64,18,0)']
+                    [0, 'rgba(175,68,35,0.2)'],
+                    [1, 'rgba(175,68,35,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [6, 6, 10]
+                data: [{y:6,marker:{symbol: 'url(images/chart-dean-morrison.png)'}}, 1, 10]
             },
             {
                 name: riderLinks[6],
@@ -240,10 +265,7 @@ $(function () {
                     [1, 'rgba(228,18,18,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [7, 7, 9]
+                data: [{y:7,marker:{symbol: 'url(images/chart-anthony-walsh.png)'}}, 11, 9]
             },
             {
                 name: riderLinks[7],
@@ -256,10 +278,7 @@ $(function () {
                     [1, 'rgba(228,18,127,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [8, 8, 8]
+                data: [{y:8,marker:{symbol: 'url(images/chart-laurie-towner.png)'}},14, 8]
             },
             {
                 name: riderLinks[8],
@@ -272,10 +291,7 @@ $(function () {
                     [1, 'rgba(228,18,216,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [9, 9, 7]
+                data: [{y:9,marker:{symbol: 'url(images/chart-ryan-hipwood.png)'}}, 13, 7]
             },
             {
                 name: riderLinks[9],
@@ -288,10 +304,7 @@ $(function () {
                     [1, 'rgba(176,18,228,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [10,10, 6]
+                data: [{y:10,marker:{symbol: 'url(images/chart-dean-bowen.png)'}},15, 6]
             },
             {
                 name: riderLinks[10],
@@ -304,10 +317,7 @@ $(function () {
                     [1, 'rgba(112,18,228,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [11,11, 5]
+                data: [{y:11,marker:{symbol: 'url(images/chart-tyler-hc.png)'}},7, 5]
             },
             {
                 name: riderLinks[11],
@@ -320,29 +330,10 @@ $(function () {
                     [1, 'rgba(53,18,228,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [12,12, 4]
+                data: [{y:12,marker:{symbol: 'url(images/chart-jamie-mitchell.png)'}},9, 4]
             },
             {
                 name: riderLinks[12],
-                type: 'areaspline',
-                color:"rgba(26,188,156,1)",
-                fillColor : {
-                  linearGradient : [0, 0, 0, 250],
-                  stops : [
-                    [0, 'rgba(26,188,156,0.2)'],
-                    [1, 'rgba(26,188,156,0)']
-                  ]
-                },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
-                },
-                data: [13,13, 3]
-            },
-            {
-                name: riderLinks[13],
                 type: 'areaspline',
                 color:"rgba(25,120,227,1)",
                 fillColor : {
@@ -352,26 +343,42 @@ $(function () {
                     [1, 'rgba(25,120,227,0)']
                   ]
                 },
-                marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
+                data: [{y:13,marker:{symbol: 'url(images/chart-brett-burcher.png)'}},12, 3]
+            },
+            {
+                name: riderLinks[13],
+                type: 'areaspline',
+                  color:"rgba(26,187,227,1)",
+                  fillColor : {
+                    linearGradient : [0, 0, 0, 250],
+                    stops : [
+                      [0, 'rgba(26,187,227,0.2)'],
+                      [1, 'rgba(26,187,227,0)']
+                    ]
+
                 },
-                data: [14,14, 2]
+                data: [{y:14,marker:{symbol: 'url(images/chart-josiah-schmucker.png)'}},8, 2]
             },
             {
                 name: riderLinks[14],
                 type: 'areaspline',
-                color:"rgba(26,187,227,1)",
-                fillColor : {
-                  linearGradient : [0, 0, 0, 250],
-                  stops : [
-                    [0, 'rgba(26,187,227,0.2)'],
-                    [1, 'rgba(26,187,227,0)']
-                  ]
+                  color:"rgba(26,188,156,1)",
+                  fillColor : {
+                    linearGradient : [0, 0, 0, 250],
+                    stops : [
+                      [0, 'rgba(26,188,156,0.2)'],
+                      [1, 'rgba(26,188,156,0)']
+                    ]
                 },
                 marker: {
-                    symbol: 'url(images/chart-rider-head-1.png)'
+                    states: {
+                        hover: {
+                            symbol: 'url(images/chart-asher-pacey.png)',
+                        }
+                    }
+
                 },
-                data: [15,15, 1]
+                data: [{y:15,marker:{symbol: 'url(images/chart-asher-pacey.png)'}},10, 1]
             }
             ]
         });
@@ -385,6 +392,28 @@ $(function () {
             background: url("images/bg-test.jpg") #0a364c 0 20% repeat;
 
         }
+        #container{
+            max-width: 970px;
+            width:100%;
+            margin-bottom: 50px !important;
+            background: transparent !important;
+        }
+
+        .chartimageContainer{
+           max-width: 970px;
+           width:100%;
+           margin: 0 auto;
+        }
+
+        @font-face {
+          font-family: 'gothic821_cn_btregular';
+          src: url("fonts/gothic821-cn-bt-webfont.eot");
+          src: url("fonts/gothic821-cn-bt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gothic821-cn-bt-webfont.woff") format("woff"), url("fonts/gothic821-cn-bt-webfont.ttf") format("truetype");
+          font-weight: normal;
+          font-style: normal;
+        }
+
+
         .riderPos
         {
            background: url("images/chart-pos-number.png") transparent 0 20% no-repeat;
@@ -413,13 +442,104 @@ $(function () {
         .label ,.highcharts-axis-labels{
          z-index: 1!important;
         }
+
+        .riderLabel{
+            color:#fff;
+            padding:5px;
+            width:130px;
+            display: inline-block;
+            text-align: center;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .rider-richie{
+            background-color: rgba(25,139,70,1);
+        }
+
+        .rider-jeff{
+           background-color: rgba(61,202,18,1);
+        }
+
+        .rider-riley{
+            background-color: rgba(149,193,54,1);
+        }
+
+        .rider-kerby{
+            background-color: rgba(186,188,33,1);
+        }
+
+        .rider-marti{
+            background-color: rgba(188,124,33,1);
+        }
+
+        .rider-dean{
+            background-color: rgba(175,68,35,1);
+        }
+
+        .rider-anthony{
+            background-color: rgba(228,18,18,1);
+        }
+        .rider-laurie{
+            background-color: rgba(228,18,127,1);
+        }
+        .rider-ryan{
+            background-color: rgba(228,18,216,1);
+        }
+        .rider-dean{
+            background-color: rgba(176,18,228,1);
+        }
+        .rider-tyler{
+            background-color: rgba(112,18,228,1);
+        }
+        .rider-jamie{
+            background-color: rgba(53,18,228,1);
+        }
+        .rider-brett{
+            background-color: rgba(25,120,227,1);
+        }
+        .rider-josiah{
+            background-color: rgba(26,187,227,1);
+        }
+        .rider-asher{
+            background-color: rgba(26,188,156,1);
+        }
+
+        .chartDate{
+          font-size: 24px;
+          text-transform: uppercase;
+          color: #a9cfcc;
+          font-family: "gothic821_cn_btregular";
+          font-weight: normal;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            .riderLabel{
+                font-size:10px;
+                color:#fff;
+                padding:5px;
+                width:90px;
+                display: inline-block;
+                text-align: center;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+            .chartDate{
+              font-size: 14px;
+            }
+
+
+        }
     </style>
 	</head>
 	<body>
 <script src="js/highcharts/highcharts.js"></script>
 <script src="js/highcharts/exporting.js"></script>
 
-<div id="container" style="min-width: 100%; height: 530px; margin: 0 auto"></div>
-
+<div id="container" style="height: 530px; margin: 0 auto"></div>
 	</body>
 </html>
