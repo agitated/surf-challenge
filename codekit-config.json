@@ -101,6 +101,18 @@
       "initialSize" : 18553,
       "fileType" : 8192
     },
+    "\/scss\/partials\/_normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/archive\/imgtest.haml" : {
       "inputAbbreviatedPath" : "\/archive\/imgtest.haml",
       "outputAbbreviatedPath" : "\/public\/imgtest.html",
@@ -117,18 +129,6 @@
       "fileType" : 256,
       "outputStyle" : 0
     },
-    "\/scss\/partials\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/archive\/backgound.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -139,17 +139,6 @@
       "outputAbbreviatedPath" : "\/archive\/backgound.jpg",
       "initialSize" : 174856,
       "fileType" : 4096
-    },
-    "\/public\/images\/promo-image-divers.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
-      "initialSize" : 504930,
-      "fileType" : 8192
     },
     "\/public\/images\/promo-image-large.png" : {
       "ignoreWasSetByUser" : 0,
@@ -162,6 +151,28 @@
       "initialSize" : 75799,
       "fileType" : 8192
     },
+    "\/public\/images\/promo-image-divers.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-divers.png",
+      "initialSize" : 504930,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-riley-liang.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-riley-liang.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-riley-liang.png",
+      "initialSize" : 2396,
+      "fileType" : 8192
+    },
     "\/public\/images\/logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -171,6 +182,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/images\/logo.png",
       "initialSize" : 9859,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-laurie-towner.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-laurie-towner.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-laurie-towner.png",
+      "initialSize" : 2570,
       "fileType" : 8192
     },
     "\/scss\/modules\/_leaderboard.scss" : {
@@ -207,17 +229,6 @@
       "initialSize" : 107345,
       "fileType" : 4096
     },
-    "\/archive\/bg_test.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "initialSize" : 39035,
-      "fileType" : 4096
-    },
     "\/scss\/partials\/_globals.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -230,6 +241,39 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/public\/images\/chart_dean-bowen.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart_dean-bowen.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart_dean-bowen.png",
+      "initialSize" : 2478,
+      "fileType" : 8192
+    },
+    "\/archive\/bg_test.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "initialSize" : 39035,
+      "fileType" : 4096
+    },
+    "\/public\/images\/chart-kerby-brown.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-kerby-brown.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-kerby-brown.png",
+      "initialSize" : 2390,
+      "fileType" : 8192
+    },
     "\/scss\/modules\/_heroBackgroundHome.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -241,6 +285,17 @@
       "outputAbbreviatedPath" : "\/public\/css\/_heroBackgroundHome.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/public\/images\/chart-dean-bowen.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-dean-bowen.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-dean-bowen.png",
+      "initialSize" : 2487,
+      "fileType" : 8192
     },
     "\/public\/images\/title-promo-header.png" : {
       "ignoreWasSetByUser" : 0,
@@ -264,6 +319,17 @@
       "initialSize" : 1631,
       "fileType" : 8192
     },
+    "\/public\/images\/chart-anthony-walsh.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-anthony-walsh.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-anthony-walsh.png",
+      "initialSize" : 2523,
+      "fileType" : 8192
+    },
     "\/public\/images\/title_bigwavemates_small.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -283,6 +349,28 @@
       "inputAbbreviatedPath" : "\/public\/css\/style.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/public\/images\/chart-josiah-schmucker.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
+      "initialSize" : 2585,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-asher-pacey.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-asher-pacey.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-asher-pacey.png",
+      "initialSize" : 2566,
+      "fileType" : 8192
     },
     "\/public\/images\/bg-test.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -418,6 +506,17 @@
       "initialSize" : 2524,
       "fileType" : 8192
     },
+    "\/public\/images\/chart-richie-vas.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-richie-vas.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-richie-vas.png",
+      "initialSize" : 2578,
+      "fileType" : 8192
+    },
     "\/scss\/modules\/_navigation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -441,15 +540,6 @@
       "outputAbbreviatedPath" : "\/public\/js\/highcharts\/highcharts-ck.js",
       "fileType" : 64
     },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
     "\/haml\/index.haml" : {
       "inputAbbreviatedPath" : "\/haml\/index.haml",
       "outputAbbreviatedPath" : "\/public\/index.html",
@@ -465,6 +555,15 @@
       "hidden" : 0,
       "fileType" : 256,
       "outputStyle" : 0
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -487,6 +586,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/public\/images\/chart-brett-burcher.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
+      "initialSize" : 2535,
+      "fileType" : 8192
+    },
     "\/public\/images\/icon_circle_leader.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -498,16 +608,38 @@
       "initialSize" : 2918,
       "fileType" : 8192
     },
-    "\/public\/images\/banner-leaderboard.jpg" : {
+    "\/public\/images\/chart-marty-p.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
+      "inputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
-      "initialSize" : 46386,
-      "fileType" : 4096
+      "outputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
+      "initialSize" : 2443,
+      "fileType" : 8192
+    },
+    "\/public\/images\/promo-image-large_v2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
+      "initialSize" : 78689,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-pos-number.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
+      "initialSize" : 1451,
+      "fileType" : 8192
     },
     "\/scss\/partials\/_breakpoints.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -521,17 +653,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/chart-pos-number.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart-pos-number.png",
-      "initialSize" : 1451,
-      "fileType" : 8192
-    },
     "\/public\/images\/bottles.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -541,6 +662,28 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/images\/bottles.png",
       "initialSize" : 232747,
+      "fileType" : 8192
+    },
+    "\/public\/images\/banner-leaderboard.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
+      "initialSize" : 46386,
+      "fileType" : 4096
+    },
+    "\/public\/images\/chart-ryan-hipwood.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-ryan-hipwood.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-ryan-hipwood.png",
+      "initialSize" : 2585,
       "fileType" : 8192
     },
     "\/scss\/modules\/_chart.scss" : {
@@ -586,6 +729,17 @@
       "initialSize" : 317920,
       "fileType" : 4096
     },
+    "\/public\/images\/chart-jeff-rowley.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
+      "initialSize" : 2421,
+      "fileType" : 8192
+    },
     "\/public\/images\/promo-image-small.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -606,6 +760,48 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/images\/chart.png",
       "initialSize" : 353627,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-jamie-mitchell.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-jamie-mitchell.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-jamie-mitchell.png",
+      "initialSize" : 2532,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-dean-morrison.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-dean-morrison.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-dean-morrison.png",
+      "initialSize" : 2443,
+      "fileType" : 8192
+    },
+    "\/public\/chart-test-v2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/chart-test-v2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/public\/images\/chart-tyler-hc.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-tyler-hc.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-tyler-hc.png",
+      "initialSize" : 2603,
       "fileType" : 8192
     },
     "\/public\/chart-test.html" : {
