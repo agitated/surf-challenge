@@ -8,113 +8,153 @@
 <link href='css/style.css' rel='stylesheet'>
 <script type="text/javascript">
   $(function () {
-      var riderLinks = [
-              {name:'Richie Vaculik'},
-              {name:'Jeff Rowley'},
-              {name:'Riley Laing'},
-              {name:'Kerby Brown'},
-              {name:'Marti Paradisis'},
-              {name:'Dean Morrison'},
-              {name:'Anthony Walsh'},
-              {name:'Laurie Towner'},
-              {name:'Ryan Hipwood'},
-              {name:'Dean Bowen'},
-              {name:'Tyler Hollmer-Cross'},
-              {name:'Jamie Mitchell'},
-              {name:'Brett Burcher'},
-              {name:'Josiah Schmucker'},
-              {name:'Asher Pacey'}
-              ];
-              $('#container').highcharts({
-                chart: {
-                  type: 'bar',
-                  renderTo : 'container',
-                  className:'chart',
-                  backgroundColor:'rgba(255, 255, 255, 0)'
-                },
-                colors: [
-                'rgba(25,139,70,1)',
-                'rgba(61,202,18,1)',
-                'rgba(149,193,54,1)',
-                'rgba(186,188,33,1)',
-                'rgba(188,124,33,1)',
-                'rgba(175,68,35,1)'
-                ],
-                credits: {
-                  enabled: false
-                },
-                title: {
-                  text: null
-                },
-                exporting: {
-                 enabled: false
-               },
-               xAxis: {
-                 categories: riderLinks,
-                 labels:{
-                   useHTML:true,
-                   zIndex: 1,
-                   formatter: function() {
-                    var className = this.value.name.toLowerCase();
-                    className = className.split(" ").slice(0,1);
-                    return '<span class="riderLabel rider-'+className+'">'+ this.value.name+'</span>';
-                  },
-                  style: {
-                   color: '#6D869F',
-                   fontWeight: 'bold',
-                   width:'160px'
-                 }
-               },
-               title: {
-                 text:null
-               },
-             },
-             yAxis: {
-              min: 0,
-              title: {
-                text: 'Votes'
-              }
-            },
-            tooltip: {
-              borderWidth: 2,
-              borderRadius: 3,
-              shadow: false,
-              useHTML: true,
-              backgroundColor: "rgba(0,0,0,0.7)",
-              formatter: function() {
-                return ("<div class='tooltip'><span style='color:"+ this.series.color+"'> Votes for " +this.series.name +' : '+  this.y + "</div>");
-              }
-            },
-            legend: {
-              backgroundColor: '#FFFFFF',
-              reversed: true
-            },
-            plotOptions: {
-              series: {
-                stacking: 'normal'
-              }
-            },
-            series: [
-            {
-              name: "AUG",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            },{
-              name: "SEP",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            },{
-              name: "OCT",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            },{
-              name: "NOV",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            },{
-              name: "DEC",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            },{
-              name: "JAN",
-              data: [10,20,30,40,50,60,70,80,90,100,110,120,130,140,150]
-            }]
-          })
+    var riderLinks = [
+      {name:'Richie Vaculik'},
+      {name:'Jeff Rowley'},
+      {name:'Riley Laing'},
+      {name:'Kerby Brown'},
+      {name:'Marti Paradisis'},
+      {name:'Dean Morrison'},
+      {name:'Anthony Walsh'},
+      {name:'Laurie Towner'},
+      {name:'Ryan Hipwood'},
+      {name:'Dean Bowen'},
+      {name:'Tyler H-Cross'},
+      {name:'Jamie Mitchell'},
+      {name:'Brett Burcher'},
+      {name:'Josiah Schmucker'},
+      {name:'Asher Pacey'}
+      ];
+      $('#container').highcharts({
+        chart: {
+          type: 'bar',
+          renderTo : 'container',
+          className:'chart',
+          backgroundColor:'rgba(255, 255, 255, 0)'
+        },
+        legend: {
+          useHTML:true,
+          layout: 'horizontal',
+          align: 'center',
+          borderWidth: 1,
+          width:290,
+          backgroundColor: '#FFFFFF',
+          itemWidth: 96,
+          itemMarginBottom: 5,
+          itemMarginTop: 5,
+          reversed: true,
+          symbolPadding: 10,
+                      symbolWidth: 40,
+          itemHoverStyle: {
+                         color: '#1abc9c'
+                     },
+          itemStyle: {
+                          color: '#000000',
+                          fontWeight: 'bold'
+                      }
+      },
+        credits: {
+          enabled: false
+        },
+        title: {
+          text: null
+        },
+        exporting: {
+         enabled: false
+        },
+        xAxis: {
+          categories: riderLinks,
+          gridLineColor:'#063d57',
+          lineColor:'#063d57',
+          tickColor:'#063d57',
+          borderColor:'#063d57',
+          tickmarkPlacement: 'on',
+          labels:{
+            offset:0,
+            useHTML:true,
+            zIndex: 1,
+            formatter: function() {
+              var className = this.value.name.toLowerCase();
+              className = className.split(" ").slice(0,1);
+              return('<span class="riderLabel rider-'+className+'">'+ this.value.name+'</span>');
+            }
+          },
+          style: {
+            color: '#6D869F',
+            fontWeight: 'bold',
+            width:'160px'
+          },
+          title: {
+          text:null
+          }
+      },
+      yAxis: {
+        min: 0,
+        gridLineColor:'#063d57',
+        lineColor:'#063d57',
+        tickPosition: 'inside',
+        showLastLabel:false,
+        labels:{
+          style: {
+            color: '#ffffff'
+          }
+        },
+        title: {
+          offset:40,
+          useHTML:true,
+          text: '<span class="labelVotes">TOTAL VOTES</span>',
+          className:'votesLabel',
+          style: {
+            color: '#6D869F',
+            fontWeight: 'bold'
+          }
+        }
+      },
+    tooltip: {
+      borderWidth: 2,
+      borderRadius: 3,
+      shadow: false,
+      useHTML: true,
+      backgroundColor: "rgba(0,0,0,0.7)",
+      formatter: function() {
+        return '<div class="tooltip"><span style="color:'+this.series.color+'"> Votes for '+this.series.name+' : '+this.y+'</span></div>';
+      }
+    },
+    plotOptions: {
+      series: {
+        borderColor:'#063d57',
+        stacking: 'normal',
+      }
+    },
+    series: [
+   /* {
+      name: "JAN",
+      color:'rgba(186,188,33,1)'
+    },
+    {
+      name: "DEC",
+      color:'rgba(188,124,33,1)'
+    },
+    {
+      name: "NOV",
+      color:'rgba(175,68,35,1)'
+    },
+    {
+      name: "SEP",
+      color:'rgba(149,193,54,1)'
+    },*/
+
+    {
+      name: "OCT",
+      data: [10,20,30,40,50,60,70,30,90,100,110,120,130,140,150],
+      color:'rgba(61,202,18,1)'
+    },
+    {
+      name: "AUG",
+      data: [10,20,30,60,50,60,70,80,90,100,110,120,130,140,150],
+      color:'rgba(25,139,70,1)'
+    }]
+  })
 });
 
 </script>
@@ -124,7 +164,7 @@ body {
 }
 #container {
   max-width: 970px;
-  width: 99%;
+  width: 100%;
   margin-bottom: 50px !important;
   background: transparent !important;
 }
@@ -177,22 +217,38 @@ body {
   -moz-border-radius: 4px;
   border-radius: 4px;
   text-transform: uppercase;
-  background-color: rgba(26,188,156,0.2);
+  background: rgb(24,85,95);
+  background: rgba(26,188,156,0.2);
 }
-.chartDate {
+
+.labelVotes{
   font-size: 24px;
   text-transform: uppercase;
-  color: #a9cfcc;
+  color: #efe6d6;
   font-family: "gothic821_cn_btregular";
   font-weight: normal;
+  margin-left: -120px;
+}
+
+.highcharts-axis-labels span{
+    left:10px !important;
 }
 
 @media only screen and (max-width: 480px) {
+
+  .highcharts-axis-labels span{
+      left:10px !important;
+  }
+
+  .labelVotes{
+    margin-left: -150px;
+  }
+
   .riderLabel {
     font-size: 10px;
     color: #fff;
     padding: 5px;
-    width: 150px;
+    width: 120px;
     display: inline-block;
     text-align: center;
     -webkit-border-radius: 4px;
@@ -206,8 +262,7 @@ body {
 </style>
 </head>
 <body>
-<script src="./js/highcharts/highcharts.js"></script>
-<script src="./js/highcharts/exporting.js"></script>
-<div id="container" style="height: 530px; margin: 0 auto"></div>
+<script src="js/highcharts/highcharts.js"></script>
+<div id="container" style="height: 550px; margin: 0 auto"></div>
 </body>
 </html>
