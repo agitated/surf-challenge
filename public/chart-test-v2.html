@@ -33,25 +33,7 @@
           backgroundColor:'rgba(255, 255, 255, 0)'
         },
         legend: {
-          useHTML:true,
-          layout: 'horizontal',
-          align: 'center',
-          borderWidth: 1,
-          width:290,
-          backgroundColor: '#FFFFFF',
-          itemWidth: 96,
-          itemMarginBottom: 5,
-          itemMarginTop: 5,
-          reversed: true,
-          symbolPadding: 10,
-                      symbolWidth: 40,
-          itemHoverStyle: {
-                         color: '#1abc9c'
-                     },
-          itemStyle: {
-                          color: '#000000',
-                          fontWeight: 'bold'
-                      }
+          enabled:false
       },
         credits: {
           enabled: false
@@ -92,22 +74,14 @@
         min: 0,
         gridLineColor:'#063d57',
         lineColor:'#063d57',
-        tickPosition: 'inside',
         showLastLabel:false,
         labels:{
           style: {
-            color: '#ffffff'
+            color: '#6D869F'
           }
         },
         title: {
-          offset:40,
-          useHTML:true,
-          text: '<span class="labelVotes">TOTAL VOTES</span>',
-          className:'votesLabel',
-          style: {
-            color: '#6D869F',
-            fontWeight: 'bold'
-          }
+          text:null
         }
       },
     tooltip: {
@@ -123,38 +97,56 @@
     plotOptions: {
       series: {
         borderColor:'#063d57',
-        stacking: 'normal',
+        stacking: 'normal'
       }
     },
     series: [
-   /* {
+    {
       name: "JAN",
-      color:'rgba(186,188,33,1)'
+      id:"jan",
+      data: [60,20,30,40,50,60,70,30,90,100,60,120,130,140,150],
+      color:'rgb(186,188,33)'
     },
     {
       name: "DEC",
-      color:'rgba(188,124,33,1)'
+      id:"dec",
+      data: [40,20,30,40,50,60,70,30,90,100,110,120,130,140,150],
+      color:'rgb(188,124,33)'
     },
     {
       name: "NOV",
-      color:'rgba(175,68,35,1)'
+      id:"nov",
+      data: [40,20,30,40,50,60,70,30,90,100,110,120,100,140,150],
+      color:'rgb(175,68,35)'
+    },
+    {
+      name: "OCT",
+      id:"oct",
+      data: [10,20,30,40,50,60,70,30,90,100,90,120,130,140,150],
+      color:'rgb(61,202,18)'
     },
     {
       name: "SEP",
-      color:'rgba(149,193,54,1)'
-    },*/
-
-    {
-      name: "OCT",
-      data: [10,20,30,40,50,60,70,30,90,100,110,120,130,140,150],
-      color:'rgba(61,202,18,1)'
+      id:"sep",
+      data: [40,20,30,40,50,60,70,30,90,100,110,120,130,140,150],
+      color:'rgb(149,193,54)'
     },
     {
       name: "AUG",
+      id:"aug",
       data: [10,20,30,60,50,60,70,80,90,100,110,120,130,140,150],
-      color:'rgba(25,139,70,1)'
+      color:'rgb(25,139,70)'
     }]
-  })
+  },
+  function (chart) {
+       // bind events to your own custom legend
+       $('#legend').on('click', 'a', function (e) {
+         var el = e.target,
+             id = el.getAttribute('id'),
+             series = chart.get(id);
+         series.setVisible(!series.visible)
+       });
+     });
 });
 
 </script>
@@ -163,9 +155,10 @@ body {
   background: url("images/bg-test.jpg") #0a364c 0 20% repeat;
 }
 #container {
-  max-width: 970px;
+  max-width: 1000px;
   width: 100%;
-  margin-bottom: 50px !important;
+  height: 440px;
+  margin: 0 auto;
   background: transparent !important;
 }
 .chartimageContainer {
@@ -192,7 +185,6 @@ body {
 .tooltip, .highcharts-tooltip span {
   z-index: 9999 !important;
   display: block;
-  background-color: #333;
 }
 .highcharts-tooltip {
   z-index: 9999 !important;
@@ -208,17 +200,13 @@ body {
   z-index: 1!important;
 }
 .riderLabel {
-  color: #fff;
+  color: #efe6d6;
   padding: 5px;
-  width: 150px;
+  width: 110px;
   display: inline-block;
-  text-align: center;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  text-align: right;
   text-transform: uppercase;
-  background: rgb(24,85,95);
-  background: rgba(26,188,156,0.2);
+  background: transparent;
 }
 
 .labelVotes{
@@ -230,14 +218,114 @@ body {
   margin-left: -120px;
 }
 
-.highcharts-axis-labels span{
-    left:10px !important;
+#legend{
+  background:#01212f;
+  padding:20px;
+  width:550px;
+  margin:0 auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
+
+#legend ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+#legend li{
+  float:left;
+  margin-left: 30px;
+}
+
+
+#legend:before,
+#legend:after {
+    content: "";
+    display: table;
+}
+#legend:after {
+    clear: both;
+}
+#legend  {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#legend ul li a{
+    padding:5px 15px;
+    display:inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  font-size: 13px;
+  width:25px;
+}
+#aug{
+  background:rgb(25,139,70);
+ }
+
+ #aug:hover{
+  background:#fff;
+  color:rgb(25,139,70);
+ }
+
+
+ #sep{
+  background:rgb(61,202,18);
+ }
+
+ #sep:hover{
+  background:#fff;
+  color:rgb(149,193,54);
+ }
+ #oct{
+  background:rgb(149,193,54);
+ }
+
+ #oct:hover{
+  background:#fff;
+  color:rgb(61,202,18);
+ }
+ #nov{
+  background:rgb(175,68,35);
+ }
+
+ #nov:hover{
+  background:#fff;
+  color:rgb(175,68,35);
+ }
+ #dec{
+  background:rgb(188,124,33);
+ }
+
+ #dec:hover{
+  background:#fff;
+  color:rgb(188,124,33);
+ }
+ #jan{
+  background:rgb(186,188,33);
+ }
+
+ #jan:hover{
+  background:#fff;
+  color:rgb(186,188,33);
+ }
+
 
 @media only screen and (max-width: 480px) {
 
   .highcharts-axis-labels span{
       left:10px !important;
+  }
+
+  #legend{
+    width:300px;
+    padding-bottom: 5px
+  }
+
+  #legend ul li a{
+      margin-bottom: 15px;
   }
 
   .labelVotes{
@@ -246,14 +334,9 @@ body {
 
   .riderLabel {
     font-size: 10px;
-    color: #fff;
     padding: 5px;
-    width: 120px;
+    width: 110px;
     display: inline-block;
-    text-align: center;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
   }
   .chartDate {
     font-size: 14px;
@@ -263,6 +346,16 @@ body {
 </head>
 <body>
 <script src="js/highcharts/highcharts.js"></script>
-<div id="container" style="height: 550px; margin: 0 auto"></div>
+<div id="container"></div>
+<div id="legend">
+  <ul>
+    <li> <a id="aug"  href="#">AUG</a></li>
+    <li><a id="sep" href="#">SEP</a></li>
+    <li><a id="oct" href="#">OCT</a></li>
+    <li><a id="nov" href="#">NOV</a></li>
+    <li><a id="dec" href="#">DEC</a></li>
+    <li><a id="jan" href="#">JAN</a></li>
+</ul>
+</div>
 </body>
 </html>
