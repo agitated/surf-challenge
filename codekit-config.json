@@ -101,49 +101,6 @@
       "initialSize" : 541332,
       "fileType" : 8192
     },
-    "\/public\/edm-content-update.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/edm-content-update.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/public\/images\/title_bigwavemates.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
-      "initialSize" : 18553,
-      "fileType" : 8192
-    },
-    "\/scss\/partials\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/archive\/backgound.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/backgound.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/backgound.jpg",
-      "initialSize" : 174856,
-      "fileType" : 4096
-    },
     "\/archive\/imgtest.haml" : {
       "inputAbbreviatedPath" : "\/archive\/imgtest.haml",
       "outputAbbreviatedPath" : "\/public\/imgtest.html",
@@ -159,6 +116,49 @@
       "hidden" : 0,
       "fileType" : 256,
       "outputStyle" : 0
+    },
+    "\/public\/images\/title_bigwavemates.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/title_bigwavemates.png",
+      "initialSize" : 18553,
+      "fileType" : 8192
+    },
+    "\/public\/edm-content-update.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/edm-content-update.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/archive\/backgound.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/backgound.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/backgound.jpg",
+      "initialSize" : 174856,
+      "fileType" : 4096
+    },
+    "\/scss\/partials\/_normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/partials\/_normalize.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/public\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/public\/images\/promo-image-divers.png" : {
       "ignoreWasSetByUser" : 0,
@@ -271,6 +271,17 @@
       "initialSize" : 2478,
       "fileType" : 8192
     },
+    "\/archive\/bg_test.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
+      "initialSize" : 39035,
+      "fileType" : 4096
+    },
     "\/scss\/partials\/_globals.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -282,17 +293,6 @@
       "outputAbbreviatedPath" : "\/public\/css\/_globals.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/archive\/bg_test.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/archive\/bg_test.jpg",
-      "initialSize" : 39035,
-      "fileType" : 4096
     },
     "\/scss\/modules\/_heroBackgroundHome.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -361,6 +361,26 @@
       "initialSize" : 26354,
       "fileType" : 8192
     },
+    "\/public\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/css\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/public\/images\/chart-josiah-schmucker.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
+      "initialSize" : 2585,
+      "fileType" : 8192
+    },
     "\/public\/images\/bg-test.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -391,26 +411,6 @@
       "outputAbbreviatedPath" : "\/public\/images\/chart-asher-pacey.png",
       "initialSize" : 2566,
       "fileType" : 8192
-    },
-    "\/public\/images\/chart-josiah-schmucker.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart-josiah-schmucker.png",
-      "initialSize" : 2585,
-      "fileType" : 8192
-    },
-    "\/public\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/scss\/modules\/_promotion.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -446,6 +446,17 @@
       "initialSize" : 2068,
       "fileType" : 8192
     },
+    "\/public\/images\/edm-promo-header.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/edm-promo-header.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/edm-promo-header.png",
+      "initialSize" : 11168,
+      "fileType" : 8192
+    },
     "\/scss\/partials\/_sections.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -457,17 +468,6 @@
       "outputAbbreviatedPath" : "\/public\/css\/_sections.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/public\/images\/edm-promo-header.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/edm-promo-header.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/edm-promo-header.png",
-      "initialSize" : 11168,
-      "fileType" : 8192
     },
     "\/public\/js\/highcharts\/exporting.js" : {
       "ignoreWasSetByUser" : 0,
@@ -571,22 +571,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/haml\/index.haml" : {
-      "inputAbbreviatedPath" : "\/haml\/index.haml",
-      "outputAbbreviatedPath" : "\/public\/index.html",
-      "outputPathIsSetByUser" : 0,
-      "escapeHTMLCharacters" : 0,
-      "useUnixNewlines" : 0,
-      "useCDATA" : 0,
-      "ignore" : 0,
-      "noEscapeInAttributes" : 0,
-      "outputFormat" : 2,
-      "useDoubleQuotes" : 0,
-      "ignoreWasSetByUser" : 0,
-      "hidden" : 0,
-      "fileType" : 256,
-      "outputStyle" : 0
-    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -607,6 +591,22 @@
       "outputAbbreviatedPath" : "\/public\/js\/highcharts\/highcharts-ck.js",
       "fileType" : 64
     },
+    "\/haml\/index.haml" : {
+      "inputAbbreviatedPath" : "\/haml\/index.haml",
+      "outputAbbreviatedPath" : "\/public\/index.html",
+      "outputPathIsSetByUser" : 0,
+      "escapeHTMLCharacters" : 0,
+      "useUnixNewlines" : 0,
+      "useCDATA" : 0,
+      "ignore" : 0,
+      "noEscapeInAttributes" : 0,
+      "outputFormat" : 2,
+      "useDoubleQuotes" : 0,
+      "ignoreWasSetByUser" : 0,
+      "hidden" : 0,
+      "fileType" : 256,
+      "outputStyle" : 0
+    },
     "\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -619,37 +619,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/images\/chart-brett-burcher.png" : {
+    "\/public\/navtest.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
-      "initialSize" : 2535,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/public\/navtest.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
-    "\/public\/images\/promo-image-large_v2.png" : {
+    "\/public\/images\/icon_circle_leader.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
+      "inputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
-      "initialSize" : 78689,
-      "fileType" : 8192
-    },
-    "\/public\/images\/chart-marty-p.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
-      "initialSize" : 2443,
+      "outputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
+      "initialSize" : 2918,
       "fileType" : 8192
     },
     "\/public\/images\/banner-leaderboard.jpg" : {
@@ -662,6 +649,17 @@
       "outputAbbreviatedPath" : "\/public\/images\/banner-leaderboard.jpg",
       "initialSize" : 46386,
       "fileType" : 4096
+    },
+    "\/public\/images\/chart-marty-p.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-marty-p.png",
+      "initialSize" : 2443,
+      "fileType" : 8192
     },
     "\/scss\/partials\/_breakpoints.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -686,14 +684,16 @@
       "initialSize" : 1451,
       "fileType" : 8192
     },
-    "\/public\/navtest.html" : {
+    "\/public\/images\/chart-brett-burcher.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/navtest.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-brett-burcher.png",
+      "initialSize" : 2535,
+      "fileType" : 8192
     },
     "\/public\/images\/bottles.png" : {
       "ignoreWasSetByUser" : 0,
@@ -706,15 +706,15 @@
       "initialSize" : 232747,
       "fileType" : 8192
     },
-    "\/public\/images\/icon_circle_leader.png" : {
+    "\/public\/images\/promo-image-large_v2.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
+      "inputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/icon_circle_leader.png",
-      "initialSize" : 2918,
+      "outputAbbreviatedPath" : "\/public\/images\/promo-image-large_v2.png",
+      "initialSize" : 78689,
       "fileType" : 8192
     },
     "\/public\/images\/chart-ryan-hipwood.png" : {
@@ -780,17 +780,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/public\/images\/chart-jeff-rowley.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
-      "initialSize" : 2421,
-      "fileType" : 8192
-    },
     "\/public\/images\/edm-header.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -822,6 +811,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/images\/chart.png",
       "initialSize" : 353627,
+      "fileType" : 8192
+    },
+    "\/public\/images\/chart-jeff-rowley.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/images\/chart-jeff-rowley.png",
+      "initialSize" : 2421,
       "fileType" : 8192
     },
     "\/public\/images\/chart-jamie-mitchell.png" : {

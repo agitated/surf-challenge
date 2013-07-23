@@ -1,0 +1,39 @@
+#rider-info {
+position: absolute;
+left: 0px;
+top: -205px;
+z-index: 201;
+color: #efe6d6;
+width: 300px;
+}
+
+#rider-info h3 {
+margin: 0;
+display: inline-block;
+background: transparent url(bg-position.png) left top no-repeat;
+text-align: center;
+font-family: "gothic821_cn_btregular";
+color: #efe6d6;
+font-size: 50px;
+width: 85px;
+height: 90px;
+line-height: 1.8em;
+}
+
+#rider-info h4 {
+margin: 0;
+font-family: "gothic821_cn_btregular";
+color: #efe6d6;
+font-size: 35px;
+line-height: 35PX;
+}
+
+@media screen and (min-width: 760px) and (max-width: 959px) {
+
+	#rider-info {
+	left: auto;
+	right: 60px;
+	top: -400px;
+	}
+
+}
